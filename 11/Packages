@@ -11580,6 +11580,30 @@ Maintainer: Craig Small <csmall@debian.org>
 Installed-Size: 132
 Depends: libc6 (>= 2.14), libsystemd0 (>= 209)
 Replaces: procps (<< 1:3.3.2-1)
+Filename: ./libprocps8_2%3a3.3.17-5_amd64.deb
+Size: 63864
+MD5sum: d4d58f107e446d7c384bbb9754ee9f02
+SHA1: 4a44bc67417dfcdccf9d2b070b172fb83ccecc41
+SHA256: 0a60017f0229cd4eec95b9f354c68312cc4ca4770ba8c01f545fd9c02b34e8a0
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://gitlab.com/procps-ng/procps
+Description: library for accessing process information from /proc
+ The libprocps library is a way of accessing information out of the /proc
+ filesystem.
+ .
+ This package contains the shared libraries necessary to run programs
+ compiled with libprocps.
+
+Package: libprocps8
+Source: procps
+Version: 2:3.3.17-5
+Architecture: amd64
+Maintainer: Craig Small <csmall@debian.org>
+Installed-Size: 132
+Depends: libc6 (>= 2.14), libsystemd0 (>= 209)
+Replaces: procps (<< 1:3.3.2-1)
 Filename: ./libprocps8_3.3.17-5_amd64.deb
 Size: 63864
 MD5sum: d4d58f107e446d7c384bbb9754ee9f02
@@ -15654,51 +15678,6 @@ Description: iSCSI initiator tools
 
 Package: openssh-client
 Source: openssh
-Version: 1:8.4p1-5
-Architecture: amd64
-Maintainer: Debian OpenSSH Maintainers <debian-ssh@lists.debian.org>
-Installed-Size: 4298
-Depends: adduser (>= 3.10), dpkg (>= 1.7.0), passwd, libc6 (>= 2.26), libedit2 (>= 2.11-20080614-0), libfido2-1 (>= 1.5.0), libgssapi-krb5-2 (>= 1.17), libselinux1 (>= 3.1~), libssl1.1 (>= 1.1.1), zlib1g (>= 1:1.1.4)
-Recommends: xauth
-Suggests: keychain, libpam-ssh, monkeysphere, ssh-askpass
-Conflicts: sftp
-Breaks: openssh-sk-helper
-Replaces: openssh-sk-helper, ssh, ssh-krb5
-Provides: rsh-client, ssh-client
-Filename: ./openssh-client_8.4p1-5_amd64.deb
-Size: 929360
-MD5sum: 195353baf9867672cb9f93251ab0aa50
-SHA1: 298c101052ec7688e4c5747fe3d64c3332097e3c
-SHA256: 5305403ffbb3dfafb3d455e4d23027cf4b1a44595cfa7ae0e760374445fd0493
-Section: net
-Priority: standard
-Multi-Arch: foreign
-Homepage: http://www.openssh.com/
-Description: secure shell (SSH) client, for secure access to remote machines
- This is the portable version of OpenSSH, a free implementation of
- the Secure Shell protocol as specified by the IETF secsh working
- group.
- .
- Ssh (Secure Shell) is a program for logging into a remote machine
- and for executing commands on a remote machine.
- It provides secure encrypted communications between two untrusted
- hosts over an insecure network. X11 connections and arbitrary TCP/IP
- ports can also be forwarded over the secure channel.
- It can be used to provide applications with a secure communication
- channel.
- .
- This package provides the ssh, scp and sftp clients, the ssh-agent
- and ssh-add programs to make public key authentication more convenient,
- and the ssh-keygen, ssh-keyscan, ssh-copy-id and ssh-argv0 utilities.
- .
- In some countries it may be illegal to use any encryption at all
- without a special permit.
- .
- ssh replaces the insecure rsh, rcp and rlogin programs, which are
- obsolete for most purposes.
-
-Package: openssh-client
-Source: openssh
 Version: 1:8.4p1-5+deb11u1
 Architecture: amd64
 Maintainer: Debian OpenSSH Maintainers <debian-ssh@lists.debian.org>
@@ -15744,22 +15723,22 @@ Description: secure shell (SSH) client, for secure access to remote machines
 
 Package: openssh-server
 Source: openssh
-Version: 1:8.4p1-5
+Version: 1:8.4p1-5+deb11u1
 Architecture: amd64
 Maintainer: Debian OpenSSH Maintainers <debian-ssh@lists.debian.org>
 Installed-Size: 1567
-Depends: adduser (>= 3.9), dpkg (>= 1.9.0), libpam-modules (>= 0.72-9), libpam-runtime (>= 0.76-14), lsb-base (>= 4.1+Debian3), openssh-client (= 1:8.4p1-5), openssh-sftp-server, procps, ucf (>= 0.28), debconf (>= 0.5) | debconf-2.0, runit-helper (>= 2.10.0~), libaudit1 (>= 1:2.2.1), libc6 (>= 2.26), libcom-err2 (>= 1.43.9), libcrypt1 (>= 1:4.1.0), libgssapi-krb5-2 (>= 1.17), libkrb5-3 (>= 1.13~alpha1+dfsg), libpam0g (>= 0.99.7.1), libselinux1 (>= 3.1~), libssl1.1 (>= 1.1.1), libsystemd0, libwrap0 (>= 7.6-4~), zlib1g (>= 1:1.1.4)
+Depends: adduser (>= 3.9), dpkg (>= 1.9.0), libpam-modules (>= 0.72-9), libpam-runtime (>= 0.76-14), lsb-base (>= 4.1+Debian3), openssh-client (= 1:8.4p1-5+deb11u1), openssh-sftp-server, procps, ucf (>= 0.28), debconf (>= 0.5) | debconf-2.0, runit-helper (>= 2.10.0~), libaudit1 (>= 1:2.2.1), libc6 (>= 2.26), libcom-err2 (>= 1.43.9), libcrypt1 (>= 1:4.1.0), libgssapi-krb5-2 (>= 1.17), libkrb5-3 (>= 1.13~alpha1+dfsg), libpam0g (>= 0.99.7.1), libselinux1 (>= 3.1~), libssl1.1 (>= 1.1.1), libsystemd0, libwrap0 (>= 7.6-4~), zlib1g (>= 1:1.1.4)
 Recommends: default-logind | logind | libpam-systemd, ncurses-term, xauth
 Suggests: molly-guard, monkeysphere, ssh-askpass, ufw
 Conflicts: sftp, ssh-socks, ssh2
 Breaks: runit (<< 2.1.2-36~)
 Replaces: openssh-client (<< 1:7.9p1-8), ssh, ssh-krb5
 Provides: ssh-server
-Filename: ./openssh-server_8.4p1-5_amd64.deb
-Size: 385356
-MD5sum: 5a6309d9fe0aeda9c388f258e0eaaf0b
-SHA1: 841b5247908a5c206d4a27a6c1043d4cf68bafe2
-SHA256: e4ee1a780b7bb1a5598a6e2bb53d825cf52f19b4b8d2d9d1ef857a50d13153a2
+Filename: ./openssh-server_1%3a8.4p1-5+deb11u1_amd64.deb
+Size: 385360
+MD5sum: 718a1df948f88394a18ebcbf7585318e
+SHA1: c6da08d3c42908d702527e26cf54b42f03991f75
+SHA256: 7118fe69fee753a08480c97d9d873dfca7c7a6972366515ae26d8428301a0dea
 Section: net
 Priority: optional
 Multi-Arch: foreign
@@ -15787,20 +15766,20 @@ Description: secure shell (SSH) server, for secure access from remote machines
 
 Package: openssh-sftp-server
 Source: openssh
-Version: 1:8.4p1-5
+Version: 1:8.4p1-5+deb11u1
 Architecture: amd64
 Maintainer: Debian OpenSSH Maintainers <debian-ssh@lists.debian.org>
 Installed-Size: 137
-Depends: openssh-client (= 1:8.4p1-5), libc6 (>= 2.26), libssl1.1 (>= 1.1.0)
+Depends: openssh-client (= 1:8.4p1-5+deb11u1), libc6 (>= 2.26), libssl1.1 (>= 1.1.0)
 Recommends: openssh-server | ssh-server
 Enhances: openssh-server, ssh-server
 Breaks: openssh-server (<< 1:6.5p1-5)
 Replaces: openssh-server (<< 1:6.5p1-5)
-Filename: ./openssh-sftp-server_8.4p1-5_amd64.deb
-Size: 52344
-MD5sum: fd50097a75d20f2278948787ffcda94b
-SHA1: dd47d0a209aa309e490f859dd39935949d3e202a
-SHA256: 12fcd38d826a2d4ec21d868037bd4d9f1f8119c25cab6d7d49b67b55cdabdd2f
+Filename: ./openssh-sftp-server_1%3a8.4p1-5+deb11u1_amd64.deb
+Size: 52360
+MD5sum: a3feaea39c4e1430ce3e802a09118e89
+SHA1: 0d53ddd180cfc6478e3744d8f217a48bf51c8e6a
+SHA256: b77715c95ef748aad458d1291df307bbe4ed2e6099d02f2c47dae961bd175cb7
 Section: net
 Priority: optional
 Multi-Arch: foreign
@@ -20472,6 +20451,34 @@ Breaks: guymager (<= 0.5.9-1), manpages-de (<< 4.9.1-2), manpages-fr (<< 4.9.1-2
 Replaces: manpages-de (<< 4.9.1-2), manpages-fr (<< 4.9.1-2), manpages-fr-extra (<< 20151231+nmu1), manpages-pl (<< 1:4.9.1-2)
 Provides: watch
 Filename: ./procps_3.3.17-5_amd64.deb
+Size: 501856
+MD5sum: 8a4da251c9ef83b242d2437926ced728
+SHA1: ea5e82a22d0b3e6d8734f9c72d6b1a78d7cdda7b
+SHA256: ac8edf0517abe09637c36651cb6a59e10948b2879f3af9003b9145b2128a7a08
+Section: admin
+Priority: important
+Multi-Arch: foreign
+Homepage: https://gitlab.com/procps-ng/procps
+Description: /proc file system utilities
+ This package provides command line and full screen utilities for browsing
+ procfs, a "pseudo" file system dynamically generated by the kernel to
+ provide information about the status of entries in its process table
+ (such as whether the process is running, stopped, or a "zombie").
+ .
+ It contains free, kill, pkill, pgrep, pmap, ps, pwdx, skill, slabtop,
+ snice, sysctl, tload, top, uptime, vmstat, w, and watch.
+
+Package: procps
+Version: 2:3.3.17-5
+Architecture: amd64
+Maintainer: Craig Small <csmall@debian.org>
+Installed-Size: 1648
+Depends: libc6 (>= 2.27), libncurses6 (>= 6), libncursesw6 (>= 6), libprocps8 (>= 2:3.3.16-1), libtinfo6 (>= 6), lsb-base (>= 3.0-10), init-system-helpers (>= 1.29~)
+Recommends: psmisc
+Breaks: guymager (<= 0.5.9-1), manpages-de (<< 4.9.1-2), manpages-fr (<< 4.9.1-2), manpages-fr-extra (<< 20151231+nmu1), manpages-pl (<< 1:4.9.1-2), open-vm-tools (<= 2011.12.20-562307-1)
+Replaces: manpages-de (<< 4.9.1-2), manpages-fr (<< 4.9.1-2), manpages-fr-extra (<< 20151231+nmu1), manpages-pl (<< 1:4.9.1-2)
+Provides: watch
+Filename: ./procps_2%3a3.3.17-5_amd64.deb
 Size: 501856
 MD5sum: 8a4da251c9ef83b242d2437926ced728
 SHA1: ea5e82a22d0b3e6d8734f9c72d6b1a78d7cdda7b
