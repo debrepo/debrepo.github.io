@@ -1315,6 +1315,42 @@ Description: simple interprocess messaging system (daemon and utilities)
  The client-side library can be found in the libdbus-1-3 package, as it is no
  longer contained in this package.
 
+Package: dbus
+Version: 1.12.24-0+deb11u1
+Architecture: amd64
+Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Installed-Size: 615
+Pre-Depends: init-system-helpers (>= 1.54~)
+Depends: adduser, libapparmor1 (>= 2.8.94), libaudit1 (>= 1:2.2.1), libc6 (>= 2.14), libcap-ng0 (>= 0.7.9), libdbus-1-3 (= 1.12.24-0+deb11u1), libexpat1 (>= 2.1~beta3), libselinux1 (>= 3.1~), libsystemd0
+Suggests: default-dbus-session-bus | dbus-session-bus
+Provides: dbus-bin (= 1.12.24-0+deb11u1), dbus-daemon (= 1.12.24-0+deb11u1), dbus-session-bus-common (= 1.12.24-0+deb11u1), dbus-system-bus (= 1.12.24-0+deb11u1), dbus-system-bus-common (= 1.12.24-0+deb11u1), default-dbus-system-bus
+Filename: ./dbus_1.12.24-0+deb11u1_amd64.deb
+Size: 242892
+MD5sum: 1dcceb613eb83474a4be7ea5178df62b
+SHA1: aa6bace9f09e6dc74cbc0176ac14cdcfd71b3353
+SHA256: c7ce20282bad7301cf34dce81bb343fc0f406195ee2e06ebd76870e6da7ca956
+Section: admin
+Priority: standard
+Multi-Arch: foreign
+Homepage: https://dbus.freedesktop.org/
+Description: simple interprocess messaging system (daemon and utilities)
+ D-Bus is a message bus, used for sending messages between applications.
+ Conceptually, it fits somewhere in between raw sockets and CORBA in
+ terms of complexity.
+ .
+ D-Bus supports broadcast messages, asynchronous messages (thus
+ decreasing latency), authentication, and more. It is designed to be
+ low-overhead; messages are sent using a binary protocol, not using
+ XML. D-Bus also supports a method call mapping for its messages, but
+ it is not required; this makes using the system quite simple.
+ .
+ It comes with several bindings, including GLib, Python, Qt and Java.
+ .
+ This package contains the D-Bus daemon and related utilities.
+ .
+ The client-side library can be found in the libdbus-1-3 package, as it is no
+ longer contained in this package.
+
 Package: debconf
 Version: 1.5.77
 Architecture: all
@@ -1656,6 +1692,31 @@ Maintainer: Debian LVM Team <team+lvm@tracker.debian.org>
 Installed-Size: 255
 Depends: libc6 (>= 2.14), libdevmapper1.02.1 (>= 2:1.02.138)
 Filename: ./dmsetup_1.02.175-2.1_amd64.deb
+Size: 92056
+MD5sum: 34e3d0bd1371de4c7b8108578a0103e2
+SHA1: c71dc841395e88fbca6a008e952dd1d40f38c58b
+SHA256: 7384821ef6798ec840b996594b72ecd707db3496a727ab861c5712701f4b9196
+Section: admin
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://sourceware.org/lvm2/
+Description: Linux Kernel Device Mapper userspace library
+ The Linux Kernel Device Mapper is the LVM (Linux Logical Volume Management)
+ Team's implementation of a minimalistic kernel-space driver that handles
+ volume management, while keeping knowledge of the underlying device layout
+ in user-space.  This makes it useful for not only LVM, but software raid,
+ and other drivers that create "virtual" block devices.
+ .
+ This package contains a utility for modifying device mappings.
+
+Package: dmsetup
+Source: lvm2 (2.03.11-2.1)
+Version: 2:1.02.175-2.1
+Architecture: amd64
+Maintainer: Debian LVM Team <team+lvm@tracker.debian.org>
+Installed-Size: 255
+Depends: libc6 (>= 2.14), libdevmapper1.02.1 (>= 2:1.02.138)
+Filename: ./dmsetup_2%3a1.02.175-2.1_amd64.deb
 Size: 92056
 MD5sum: 34e3d0bd1371de4c7b8108578a0103e2
 SHA1: c71dc841395e88fbca6a008e952dd1d40f38c58b
@@ -5397,6 +5458,30 @@ Description: disk encryption support - shared library
  .
  This package provides the libcryptsetup shared library.
 
+Package: libcryptsetup12
+Source: cryptsetup
+Version: 2:2.3.7-1+deb11u1
+Architecture: amd64
+Maintainer: Debian Cryptsetup Team <pkg-cryptsetup-devel@alioth-lists.debian.net>
+Installed-Size: 565
+Depends: libargon2-1 (>= 0~20171227), libblkid1 (>= 2.24.2), libc6 (>= 2.25), libdevmapper1.02.1 (>= 2:1.02.97), libjson-c5 (>= 0.15), libssl1.1 (>= 1.1.0), libuuid1 (>= 2.16)
+Filename: ./libcryptsetup12_2%3a2.3.7-1+deb11u1_amd64.deb
+Size: 248428
+MD5sum: 5dcd6233abca7f3a1477a3bde408ce89
+SHA1: ba6e5b787605290cbbb09b0a974c341220fa12a5
+SHA256: f002372b5329a2d3b3fa79f0506f48a5ddd52168fa6e7466c4638f7d9ccdf45c
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://gitlab.com/cryptsetup/cryptsetup
+Description: disk encryption support - shared library
+ Cryptsetup provides an interface for configuring encryption on block
+ devices (such as /home or swap partitions), using the Linux kernel
+ device mapper target dm-crypt. It features integrated Linux Unified Key
+ Setup (LUKS) support.
+ .
+ This package provides the libcryptsetup shared library.
+
 Package: libctf-nobfd0
 Source: binutils
 Version: 2.35.2-2
@@ -5477,6 +5562,39 @@ Size: 337668
 MD5sum: bf71074de1779c20a07d288637ccc62b
 SHA1: f4c3cf37a67f5e5f56a014c643ba767ba9e5cc82
 SHA256: 86ee8f307582708132806c687e0127375d4a42e23d2bf2c96054a547cadddd80
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://curl.haxx.se
+Description: easy-to-use client-side URL transfer library (GnuTLS flavour)
+ libcurl is an easy-to-use client-side URL transfer library, supporting DICT,
+ FILE, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S,
+ RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, TELNET and TFTP.
+ .
+ libcurl supports SSL certificates, HTTP POST, HTTP PUT, FTP uploading, HTTP
+ form based upload, proxies, cookies, user+password authentication (Basic,
+ Digest, NTLM, Negotiate, Kerberos), file transfer resume, http proxy tunneling
+ and more!
+ .
+ libcurl is free, thread-safe, IPv6 compatible, feature rich, well supported,
+ fast, thoroughly documented and is already used by many known, big and
+ successful companies and numerous applications.
+ .
+ SSL support is provided by GnuTLS.
+
+Package: libcurl3-gnutls
+Source: curl
+Version: 7.74.0-1.3+deb11u3
+Architecture: amd64
+Maintainer: Alessandro Ghedini <ghedo@debian.org>
+Installed-Size: 735
+Depends: libbrotli1 (>= 0.6.0), libc6 (>= 2.17), libgnutls30 (>= 3.7.0), libgssapi-krb5-2 (>= 1.17), libidn2-0 (>= 0.6), libldap-2.4-2 (>= 2.4.7), libnettle8, libnghttp2-14 (>= 1.12.0), libpsl5 (>= 0.16.0), librtmp1 (>= 2.4+20131018.git79459a2-3~), libssh2-1 (>= 1.7.0), zlib1g (>= 1:1.1.4)
+Recommends: ca-certificates
+Filename: ./libcurl3-gnutls_7.74.0-1.3+deb11u3_amd64.deb
+Size: 341628
+MD5sum: 0dc2a34904bbe4313ec9f91627fd325d
+SHA1: c9b84aba7b52f097b5e372ceced22d58ac196901
+SHA256: fee665729e973230946efcd463c36b74c394c5a9187720aa11ce3ad34a025f2d
 Section: libs
 Priority: optional
 Multi-Arch: same
@@ -5722,6 +5840,39 @@ Description: simple interprocess messaging system (library)
  .
  The daemon can be found in the dbus package.
 
+Package: libdbus-1-3
+Source: dbus
+Version: 1.12.24-0+deb11u1
+Architecture: amd64
+Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Installed-Size: 486
+Depends: libc6 (>= 2.17), libsystemd0
+Recommends: dbus
+Breaks: dbus (<< 1.9.16-1~)
+Filename: ./libdbus-1-3_1.12.24-0+deb11u1_amd64.deb
+Size: 222416
+MD5sum: a759eaa49a560505cfe82ad99f5498ce
+SHA1: 2a47fad4f580b479f104e4290b56f4d6e38b08c1
+SHA256: dd594737f53de48c3cbe3431b12207c0c3382a48f257a81d5a7e59fcc6d3ace9
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://dbus.freedesktop.org/
+Description: simple interprocess messaging system (library)
+ D-Bus is a message bus, used for sending messages between applications.
+ Conceptually, it fits somewhere in between raw sockets and CORBA in
+ terms of complexity.
+ .
+ D-Bus supports broadcast messages, asynchronous messages (thus
+ decreasing latency), authentication, and more. It is designed to be
+ low-overhead; messages are sent using a binary protocol, not using
+ XML. D-Bus also supports a method call mapping for its messages, but
+ it is not required; this makes using the system quite simple.
+ .
+ It comes with several bindings, including GLib, Python, Qt and Java.
+ .
+ The daemon can be found in the dbus package.
+
 Package: libde265-0
 Source: libde265
 Version: 1.0.8-1
@@ -5817,6 +5968,33 @@ Description: Linux Kernel Device Mapper event support library
  .
  This package contains the userspace library to help with event monitoring
  for devmapper devices, in conjunction with the dmevent daemon.
+
+Package: libdevmapper1.02.1
+Source: lvm2 (2.03.11-2.1)
+Version: 2:1.02.175-2.1
+Architecture: amd64
+Maintainer: Debian LVM Team <team+lvm@tracker.debian.org>
+Installed-Size: 479
+Depends: libc6 (>= 2.28), libselinux1 (>= 3.1~), libudev1 (>= 183), dmsetup (>= 2:1.02.175-2.1~)
+Filename: ./libdevmapper1.02.1_2%3a1.02.175-2.1_amd64.deb
+Size: 142920
+MD5sum: a26fb16788f370a8d74c2e6ad49f33b8
+SHA1: f8328e71f6399d3da7e766affb80592a56e06616
+SHA256: 74dfe455175a0181957ee2803f4810d26f4c6e00968b49cb67fe7a006e299eb1
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://sourceware.org/lvm2/
+Description: Linux Kernel Device Mapper userspace library
+ The Linux Kernel Device Mapper is the LVM (Linux Logical Volume Management)
+ Team's implementation of a minimalistic kernel-space driver that handles
+ volume management, while keeping knowledge of the underlying device layout
+ in user-space.  This makes it useful for not only LVM, but software raid,
+ and other drivers that create "virtual" block devices.
+ .
+ This package contains the (user-space) shared library for accessing the
+ device-mapper; it allows usage of the device-mapper through a clean,
+ consistent interface (as opposed to through kernel ioctls).
 
 Package: libdevmapper1.02.1
 Source: lvm2 (2.03.11-2.1)
@@ -6328,6 +6506,29 @@ Size: 98508
 MD5sum: 74c01285bcc67d8600f022de69466344
 SHA1: 6589230ef8e051d079b08ea217a512e7dde16337
 SHA256: e3069628af14657a2fb2cc597c35982bf71d392ccf4e70207c92b156a0e341f5
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://libexpat.github.io/
+Description: XML parsing C library - runtime library
+ This package contains the runtime, shared library of expat, the C
+ library for parsing XML. Expat is a stream-oriented parser in
+ which an application registers handlers for things the parser
+ might find in the XML document (like start tags).
+
+Package: libexpat1
+Source: expat
+Version: 2.2.10-2+deb11u5
+Architecture: amd64
+Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Installed-Size: 411
+Depends: libc6 (>= 2.25)
+Conflicts: wink (<= 1.5.1060-4)
+Filename: ./libexpat1_2.2.10-2+deb11u5_amd64.deb
+Size: 98192
+MD5sum: 145881b31327a93b9ce4657616c7cac5
+SHA1: 6e66f15681ed9703e074d5d28a0dca556c22d21b
+SHA256: 5744040c4735bcdd51238aebfa3e402b857244897f1007f61154982ebe5abbd7
 Section: libs
 Priority: optional
 Multi-Arch: same
@@ -9053,6 +9254,33 @@ Description: C and C++ client library to the memcached server
  .
  This package provides the libmemcached shared library itself.
 
+Package: libmm-glib0
+Source: modemmanager
+Version: 1.14.12-0.2
+Architecture: amd64
+Maintainer: Mathieu Trudel-Lapierre <mathieu.tl@gmail.com>
+Installed-Size: 1919
+Depends: libc6 (>= 2.14), libglib2.0-0 (>= 2.37.3)
+Recommends: modemmanager (>= 1.14.12-0.2)
+Filename: ./libmm-glib0_1.14.12-0.2_amd64.deb
+Size: 1104244
+MD5sum: 72d06f6d1702738465431f45fabee870
+SHA1: 2c06e76a792b3d1c7f02dddc04ccc78c6e400707
+SHA256: 41213b8f9e295be62a71cd2f023f8c629b5ccdbd6c9b8097794c53bda177a2da
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.freedesktop.org/wiki/Software/ModemManager/
+Description: D-Bus service for managing modems - shared libraries
+ ModemManager is a DBus-activated daemon which controls mobile broadband
+ (2G/3G/4G) devices and connections. Whether built-in devices, USB dongles,
+ Bluetooth-paired telephones or professional RS232/USB devices with external
+ power supplies, ModemManager is able to prepare and configure the modems and
+ setup connections with them.
+ .
+ This package contains shared libraries for applications interfacing with
+ ModemManager.
+
 Package: libmnl0
 Source: libmnl
 Version: 1.0.4-3
@@ -9261,6 +9489,28 @@ Description: Utility library for managing the libnvdimm subsystem
  .
  This package contains a utility library for managing the libnvdimm
  (non-volatile memory device) sub-system in the Linux kernel.
+
+Package: libndp0
+Source: libndp (1.6-1)
+Version: 1.6-1+b1
+Architecture: amd64
+Maintainer: Andrew Ayer <agwa@andrewayer.name>
+Installed-Size: 41
+Depends: libc6 (>= 2.15)
+Filename: ./libndp0_1.6-1+b1_amd64.deb
+Size: 11028
+MD5sum: aae82b50947244d7765a002ad3845e67
+SHA1: e077f59696625d241b8b1c99baaac16ad13221af
+SHA256: bc0d32a9c14c653ec2c92503963025c65bd98c424825474585722b2775f83fed
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://libndp.org
+Description: Library for Neighbor Discovery Protocol
+ libndp is a library for the IPv6 Neighbor Discovery Protocol (NDP).  It
+ contains functions for building and parsing NDP messages, and provides
+ a high-level interface for sending and receiving NDP messages on a
+ network interface.
 
 Package: libnettle8
 Source: nettle
@@ -10138,6 +10388,32 @@ Description: library for dealing with netlink sockets - route interface
  .
  API to the configuration interfaces of the NETLINK_ROUTE family.
 
+Package: libnm0
+Source: network-manager
+Version: 1.30.6-1+deb11u1
+Architecture: amd64
+Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Installed-Size: 1485
+Depends: libc6 (>= 2.25), libglib2.0-0 (>= 2.43.2), libgnutls30 (>= 3.7.0), libudev1 (>= 183), libuuid1 (>= 2.16)
+Filename: ./libnm0_1.30.6-1+deb11u1_amd64.deb
+Size: 447824
+MD5sum: 7d058df046820afe661fb60762369465
+SHA1: 5721a858356458eac5fcd01288c8e4d5c4adf37a
+SHA256: a44f74a8daec2c1b56ae89af56bd2dcac549932946de46d960a98a6173aee714
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://wiki.gnome.org/Projects/NetworkManager
+Description: GObject-based client library for NetworkManager
+ NetworkManager is a system network service that manages your network devices
+ and connections, attempting to keep active network connectivity when
+ available. It manages ethernet, Wi-Fi, mobile broadband (WWAN), and PPPoE
+ devices, and provides VPN integration with a variety of different VPN
+ services.
+ .
+ This package contains a convenience library to ease the access to
+ NetworkManager.
+
 Package: libnorm1
 Source: norm
 Version: 1.5.9+dfsg-2
@@ -10810,6 +11086,31 @@ Size: 282928
 MD5sum: 926276438b8e372d0a1565f139c383eb
 SHA1: 4030c365f654806e0b3e64d9c480b6ac335833cf
 SHA256: e2c2c3ecb41f77c8303b79f3c1d9f57870162a001397f92916e136a3ad0b8509
+Section: admin
+Priority: standard
+Multi-Arch: same
+Homepage: https://www.freedesktop.org/wiki/Software/systemd
+Description: system and service manager - PAM module
+ This package contains the PAM module which registers user sessions in
+ the systemd control group hierarchy for logind.
+ .
+ If in doubt, do install this package.
+ .
+ Packages that depend on logind functionality need to depend on libpam-systemd.
+
+Package: libpam-systemd
+Source: systemd
+Version: 247.3-7+deb11u1
+Architecture: amd64
+Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+Installed-Size: 575
+Depends: libc6 (>= 2.30), libpam0g (>= 0.99.7.1), systemd (= 247.3-7+deb11u1), libpam-runtime (>= 1.0.1-6), dbus, systemd-sysv
+Provides: default-logind (= 247.3-7+deb11u1), logind (= 247.3-7+deb11u1)
+Filename: ./libpam-systemd_247.3-7+deb11u1_amd64.deb
+Size: 282656
+MD5sum: 2094bd6920b1aa0e38c976003d0309c1
+SHA1: 2fbfd0a7cb47629f80245703a6e4fba1942286eb
+SHA256: d64269fb0b875d5fa62f5c218b395dbfe830f56ff6cf7702696fd47e4f87b05f
 Section: admin
 Priority: standard
 Multi-Arch: same
@@ -12758,6 +13059,25 @@ Homepage: https://www.freedesktop.org/wiki/Software/systemd
 Description: systemd utility library
  The libsystemd0 library provides interfaces to various systemd components.
 
+Package: libsystemd0
+Source: systemd
+Version: 247.3-7+deb11u1
+Architecture: amd64
+Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+Installed-Size: 865
+Pre-Depends: libc6 (>= 2.30), libgcrypt20 (>= 1.8.0), liblz4-1 (>= 0.0~r122), liblzma5 (>= 5.1.1alpha+20120614), libzstd1 (>= 1.4.0)
+Filename: ./libsystemd0_247.3-7+deb11u1_amd64.deb
+Size: 375804
+MD5sum: 4f03838077ea60e4d4adc2669f102e63
+SHA1: 0de06de9b77b55a7c5354b81f3755c2771002a0b
+SHA256: 0bce44fd32e9fa18b68cb89f4010939b9984b9782db2d1985b041fc96e9a02b8
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.freedesktop.org/wiki/Software/systemd
+Description: systemd utility library
+ The libsystemd0 library provides interfaces to various systemd components.
+
 Package: libsz2
 Source: libaec
 Version: 1.0.4-1
@@ -12853,6 +13173,39 @@ Description: Trivial Database - shared library
  appropriate locking and transactions.
  .
  This package contains the shared library file.
+
+Package: libteamdctl0
+Source: libteam
+Version: 1.31-1
+Architecture: amd64
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Installed-Size: 45
+Depends: libc6 (>= 2.15), libdbus-1-3 (>= 1.9.14)
+Filename: ./libteamdctl0_1.31-1_amd64.deb
+Size: 12084
+MD5sum: 7d4466f21f3606cca3b40650f0d40c85
+SHA1: f34c776482085d7c2a97f638c4de2efd899c52f4
+SHA256: 9619c108b872b4b01946fb1841dffd06e95dd6dcf511efefc212755c829b1378
+Section: net
+Priority: optional
+Multi-Arch: same
+Homepage: http://libteam.org
+Description: library for communication with `teamd` process
+ libteamdctl is a library for communication with teamd process
+ (via D-Bus, Unix socket or zeromq). It is used by the `teamdctl` utility.
+ .
+ Libteam provides a mechanism to team multiple NICs (ports) at OSI Layer 2
+ (Data link) into a single virtual NIC. The process is called "channel
+ bonding", "Ethernet bonding", "channel teaming", "link aggregation", etc.
+ This is already implemented in the Linux kernel by the bonding driver but
+ unlike the bonding driver, libteam (user space) has the following
+ additional features:
+  * load-balancing for LACP support
+  * NS/NA (IPV6) link monitoring
+  * port priorities and stickiness ("primary" option enhancement)
+  * separate per-port link monitoring setup
+ .
+ Libteam requires Linux kernel 3.3 or higher.
 
 Package: libtevent0
 Source: tevent
@@ -13277,6 +13630,25 @@ Size: 168112
 MD5sum: 7e7cacbfe116984555424ab8478fc756
 SHA1: 4f50642e5cf5202aeee21da0b8ddb247426e301b
 SHA256: 379ba45ef8b884f686ac0af435fb307137a86e39ee816ae2516f14ff60332488
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.freedesktop.org/wiki/Software/systemd
+Description: libudev shared library
+ This library provides access to udev device information.
+
+Package: libudev1
+Source: systemd
+Version: 247.3-7+deb11u1
+Architecture: amd64
+Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+Installed-Size: 282
+Depends: libc6 (>= 2.30)
+Filename: ./libudev1_247.3-7+deb11u1_amd64.deb
+Size: 168208
+MD5sum: f6aa6218caa11d6f417d45e55c3f31cc
+SHA1: 36b881784b06a19dd7dc65e6cc0eec35a99ffdd4
+SHA256: 6c654be062de0fd8696808cbc0bfd5ff81e7163c14f0136a132090eda2363831
 Section: libs
 Priority: optional
 Multi-Arch: same
@@ -15395,6 +15767,41 @@ Description: Basic TCP/IP networking system
  .
  In particular, it supplies common name-to-number mappings in /etc/services,
  /etc/rpc, /etc/protocols and /etc/ethertypes.
+
+Package: network-manager
+Version: 1.30.6-1+deb11u1
+Architecture: amd64
+Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Installed-Size: 15217
+Depends: libaudit1 (>= 1:2.2.1), libbluetooth3 (>= 4.91), libc6 (>= 2.26), libcurl3-gnutls (>= 7.24.0), libglib2.0-0 (>= 2.61.2), libgnutls30 (>= 3.7.0), libjansson4 (>= 2.0.1), libmm-glib0 (>= 1.4.0), libndp0 (>= 1.2), libnewt0.52 (>= 0.52.21), libnm0 (= 1.30.6-1+deb11u1), libpsl5 (>= 0.13.0), libreadline8 (>= 6.0), libselinux1 (>= 3.1~), libsystemd0 (>= 209), libteamdctl0 (>= 1.9), libudev1 (>= 183), libuuid1 (>= 2.16), wpasupplicant, dbus, udev, adduser, policykit-1
+Recommends: ppp, dnsmasq-base, iptables, modemmanager, wireless-regdb, libpam-systemd
+Suggests: libteam-utils, isc-dhcp-client
+Breaks: ppp (>= 2.4.9-2~), ppp (<< 2.4.9-1+~)
+Filename: ./network-manager_1.30.6-1+deb11u1_amd64.deb
+Size: 3048152
+MD5sum: 69ce6489969964e1b4f5c8c362c13c87
+SHA1: 7a2f7536969ac2124226e66caca00f08a4d224df
+SHA256: 0c71da92ed712099d368a03a486349362d0d1efdb9f97cba09bae4ad8bd5d9a8
+Section: net
+Priority: optional
+Homepage: https://wiki.gnome.org/Projects/NetworkManager
+Description: network management framework (daemon and userspace tools)
+ NetworkManager is a system network service that manages your network devices
+ and connections, attempting to keep active network connectivity when
+ available. It manages ethernet, Wi-Fi, mobile broadband (WWAN), and PPPoE
+ devices, and provides VPN integration with a variety of different VPN
+ services.
+ .
+ This package provides the userspace daemons and a command line interface to
+ interact with NetworkManager.
+ .
+ Optional dependencies:
+  * ppp: Required for establishing dial-up connections (e.g. via GSM).
+  * dnsmasq-base/iptables: Required for creating Ad-hoc connections and
+    connection sharing.
+  * libteam-utils: Network Team driver allows multiple network interfaces to be
+    teamed together and act like a single one. This process is called "ethernet
+    bonding", "channel teaming" or "link aggregation".
 
 Package: nftables
 Version: 0.9.8-3.1
@@ -22555,6 +22962,39 @@ Description: system and service manager
  Installing the systemd package will not switch your init system unless you
  boot with init=/lib/systemd/systemd or install systemd-sysv in addition.
 
+Package: systemd
+Version: 247.3-7+deb11u1
+Architecture: amd64
+Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+Installed-Size: 16028
+Pre-Depends: libblkid1 (>= 2.24), libc6 (>= 2.30), libgcrypt20 (>= 1.8.0), liblz4-1 (>= 0.0~r122), liblzma5 (>= 5.1.1alpha+20120614), libselinux1 (>= 3.1~), libzstd1 (>= 1.4.0)
+Depends: libacl1 (>= 2.2.23), libapparmor1 (>= 2.13), libaudit1 (>= 1:2.2.1), libcap2 (>= 1:2.24-9~), libcrypt1 (>= 1:4.4.0), libcryptsetup12 (>= 2:2.3), libgnutls30 (>= 3.7.0), libgpg-error0 (>= 1.14), libip4tc2 (>= 1.8.3), libkmod2 (>= 5~), liblz4-1 (>= 0.0~r130), libmount1 (>= 2.30), libpam0g (>= 0.99.7.1), libseccomp2 (>= 2.4.1), libsystemd0 (= 247.3-7+deb11u1), util-linux (>= 2.27.1), mount (>= 2.26), adduser
+Recommends: dbus, systemd-timesyncd | time-daemon
+Suggests: systemd-container, policykit-1
+Conflicts: consolekit, libpam-ck-connector
+Breaks: python-dbusmock (<< 0.18), python3-dbusmock (<< 0.18), resolvconf (<< 1.83~), systemd-shim (<< 10-4~), udev (<< 247~)
+Filename: ./systemd_247.3-7+deb11u1_amd64.deb
+Size: 4501012
+MD5sum: e61ed8bb621d7921db9f9538a75b4441
+SHA1: f818ee7822d94befab1c6db6290aa51b9951577c
+SHA256: 3e49628911a3e660cf8b231ca1ad0b6327beabbfbf924da361fe3f3984d958ff
+Section: admin
+Priority: important
+Multi-Arch: foreign
+Homepage: https://www.freedesktop.org/wiki/Software/systemd
+Description: system and service manager
+ systemd is a system and service manager for Linux. It provides aggressive
+ parallelization capabilities, uses socket and D-Bus activation for starting
+ services, offers on-demand starting of daemons, keeps track of processes using
+ Linux control groups, maintains mount and automount points and implements an
+ elaborate transactional dependency-based service control logic.
+ .
+ systemd is compatible with SysV and LSB init scripts and can work as a
+ drop-in replacement for sysvinit.
+ .
+ Installing the systemd package will not switch your init system unless you
+ boot with init=/lib/systemd/systemd or install systemd-sysv in addition.
+
 Package: systemd-sysv
 Source: systemd
 Version: 247.3-7
@@ -22570,6 +23010,39 @@ Size: 113188
 MD5sum: 5bc2cc4f21fa33d3fd8a16d83a1562b8
 SHA1: 4b5c31c46b4df8040d6d4736f2dca92ee217a7ef
 SHA256: dd3cd4bf12750cd6cde011c0e4b402345ff03c287e6a3922dc2553d1064efab9
+Section: admin
+Priority: important
+Multi-Arch: foreign
+Homepage: https://www.freedesktop.org/wiki/Software/systemd
+Description: system and service manager - SysV links
+ systemd is a system and service manager for Linux. It provides aggressive
+ parallelization capabilities, uses socket and D-Bus activation for starting
+ services, offers on-demand starting of daemons, keeps track of processes using
+ Linux control groups, maintains mount and automount points and implements an
+ elaborate transactional dependency-based service control logic.
+ .
+ systemd is compatible with SysV and LSB init scripts and can work as a
+ drop-in replacement for sysvinit.
+ .
+ This package provides the manual pages and links needed for systemd
+ to replace sysvinit. Installing systemd-sysv will overwrite /sbin/init with a
+ link to systemd.
+
+Package: systemd-sysv
+Source: systemd
+Version: 247.3-7+deb11u1
+Architecture: amd64
+Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+Installed-Size: 140
+Pre-Depends: systemd
+Recommends: libpam-systemd, libnss-systemd
+Conflicts: file-rc, systemd-shim, sysvinit-core, upstart (<< 1.13.2-0ubuntu10~)
+Replaces: sysvinit-core, upstart (<< 1.13.2-0ubuntu10~)
+Filename: ./systemd-sysv_247.3-7+deb11u1_amd64.deb
+Size: 113336
+MD5sum: 09e6174e8898ba6284d7db9b6ec0e490
+SHA1: 863a30799bab67988600b7d0ce1b52ac6a31163a
+SHA256: 8de050bc7c3326d72a3e1b4b678485bc962e24942f5e5311c43a33bb608fed21
 Section: admin
 Priority: important
 Multi-Arch: foreign
@@ -22860,6 +23333,29 @@ Description: /dev/ and hotplug management daemon
  udev is a daemon which dynamically creates and removes device nodes from
  /dev/, handles hotplug events and loads drivers at boot time.
 
+Package: udev
+Source: systemd
+Version: 247.3-7+deb11u1
+Architecture: amd64
+Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+Installed-Size: 8961
+Depends: libacl1 (>= 2.2.23), libblkid1 (>= 2.24), libc6 (>= 2.30), libkmod2 (>= 5~), libselinux1 (>= 3.1~), adduser, dpkg (>= 1.19.3) | systemd-sysv, libudev1 (= 247.3-7+deb11u1), util-linux (>= 2.27.1)
+Conflicts: hal
+Breaks: systemd (<< 233-4)
+Replaces: systemd (<< 233-4)
+Filename: ./udev_247.3-7+deb11u1_amd64.deb
+Size: 1463632
+MD5sum: f9027053f6dce8199a6a4545e6b517ae
+SHA1: d40506c4037a4cb1880ffdf1dfebb127c3a2e6b2
+SHA256: 86bdec9be6106577e61081578faff7e73f3e30b2b475fe9c7f9e50c9c2e83552
+Section: admin
+Priority: important
+Multi-Arch: foreign
+Homepage: https://www.freedesktop.org/wiki/Software/systemd
+Description: /dev/ and hotplug management daemon
+ udev is a daemon which dynamically creates and removes device nodes from
+ /dev/, handles hotplug events and loads drivers at boot time.
+
 Package: usbutils
 Version: 1:013-3
 Architecture: amd64
@@ -23139,6 +23635,30 @@ Depends: libc6 (>= 2.29), libdbus-1-3 (>= 1.9.14), libnl-3-200 (>= 3.2.21), libn
 Suggests: wpagui, libengine-pkcs11-openssl
 Breaks: initscripts (<< 2.88dsf-13.3)
 Filename: ./wpasupplicant_2.9.0-21_amd64.deb
+Size: 1284232
+MD5sum: 1c2a4876abf0ab710a5bb681ba77617e
+SHA1: d7706411702e2fe384642e92ea0526365399e02c
+SHA256: 807954142f61fdc2ea964a027cbca0211fc4c039c5bcaa90d7040d1e87ec98e1
+Section: net
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://w1.fi/wpa_supplicant/
+Description: client support for WPA and WPA2 (IEEE 802.11i)
+ wpa-supplicant is a userspace daemon handling connection and authentication
+ in wireless and wired networks, primarily secured with the WPA/WPA2/WPA3
+ protocols. This software provides key negotiation with the access point
+ (WPA Authenticator), and controls association with IEEE 802.11i networks.
+
+Package: wpasupplicant
+Source: wpa
+Version: 2:2.9.0-21
+Architecture: amd64
+Maintainer: Debian wpasupplicant Maintainers <wpa@packages.debian.org>
+Installed-Size: 3439
+Depends: libc6 (>= 2.29), libdbus-1-3 (>= 1.9.14), libnl-3-200 (>= 3.2.21), libnl-genl-3-200 (>= 3.2.7), libnl-route-3-200 (>= 3.4.0), libpcsclite1 (>= 1.0.0), libreadline8 (>= 6.0), libssl1.1 (>= 1.1.1), lsb-base, adduser
+Suggests: wpagui, libengine-pkcs11-openssl
+Breaks: initscripts (<< 2.88dsf-13.3)
+Filename: ./wpasupplicant_2%3a2.9.0-21_amd64.deb
 Size: 1284232
 MD5sum: 1c2a4876abf0ab710a5bb681ba77617e
 SHA1: d7706411702e2fe384642e92ea0526365399e02c
