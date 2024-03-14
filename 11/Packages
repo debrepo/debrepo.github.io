@@ -11295,6 +11295,31 @@ Description: system and service manager - PAM module
  .
  Packages that depend on logind functionality need to depend on libpam-systemd.
 
+Package: libpam-systemd
+Source: systemd
+Version: 247.3-7+deb11u4
+Architecture: amd64
+Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+Installed-Size: 575
+Depends: libc6 (>= 2.30), libpam0g (>= 0.99.7.1), systemd (= 247.3-7+deb11u4), libpam-runtime (>= 1.0.1-6), dbus, systemd-sysv
+Provides: default-logind (= 247.3-7+deb11u4), logind (= 247.3-7+deb11u4)
+Filename: ./libpam-systemd_247.3-7+deb11u4_amd64.deb
+Size: 283348
+MD5sum: 97db66e05bbb57d16f7dfebf51cea30a
+SHA1: 593c9bac7de9c5a2ecba5fcc6b8ca6d55c355b04
+SHA256: df085bdb7a2dd297a096b9cfe536ceb4a7dfda2a9506c1042982380955e18e9b
+Section: admin
+Priority: standard
+Multi-Arch: same
+Homepage: https://www.freedesktop.org/wiki/Software/systemd
+Description: system and service manager - PAM module
+ This package contains the PAM module which registers user sessions in
+ the systemd control group hierarchy for logind.
+ .
+ If in doubt, do install this package.
+ .
+ Packages that depend on logind functionality need to depend on libpam-systemd.
+
 Package: libpam0g
 Source: pam
 Version: 1.4.0-9+deb11u1
@@ -13243,6 +13268,25 @@ Size: 375804
 MD5sum: 4f03838077ea60e4d4adc2669f102e63
 SHA1: 0de06de9b77b55a7c5354b81f3755c2771002a0b
 SHA256: 0bce44fd32e9fa18b68cb89f4010939b9984b9782db2d1985b041fc96e9a02b8
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.freedesktop.org/wiki/Software/systemd
+Description: systemd utility library
+ The libsystemd0 library provides interfaces to various systemd components.
+
+Package: libsystemd0
+Source: systemd
+Version: 247.3-7+deb11u4
+Architecture: amd64
+Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+Installed-Size: 865
+Pre-Depends: libc6 (>= 2.30), libgcrypt20 (>= 1.8.0), liblz4-1 (>= 0.0~r122), liblzma5 (>= 5.1.1alpha+20120614), libzstd1 (>= 1.4.0)
+Filename: ./libsystemd0_247.3-7+deb11u4_amd64.deb
+Size: 376456
+MD5sum: 1f501c7140085274a2fda44d0613de96
+SHA1: 97c2cb6975145add29f2ff738f917ec0930d20a7
+SHA256: e6f3e65e388196a399c1a36564c38ad987337350358732056227db1b6e708878
 Section: libs
 Priority: optional
 Multi-Arch: same
@@ -23167,6 +23211,39 @@ Description: system and service manager
  Installing the systemd package will not switch your init system unless you
  boot with init=/lib/systemd/systemd or install systemd-sysv in addition.
 
+Package: systemd
+Version: 247.3-7+deb11u4
+Architecture: amd64
+Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+Installed-Size: 16028
+Pre-Depends: libblkid1 (>= 2.24), libc6 (>= 2.30), libgcrypt20 (>= 1.8.0), liblz4-1 (>= 0.0~r122), liblzma5 (>= 5.1.1alpha+20120614), libselinux1 (>= 3.1~), libzstd1 (>= 1.4.0)
+Depends: libacl1 (>= 2.2.23), libapparmor1 (>= 2.13), libaudit1 (>= 1:2.2.1), libcap2 (>= 1:2.24-9~), libcrypt1 (>= 1:4.4.0), libcryptsetup12 (>= 2:2.3), libgnutls30 (>= 3.7.0), libgpg-error0 (>= 1.14), libip4tc2 (>= 1.8.3), libkmod2 (>= 5~), liblz4-1 (>= 0.0~r130), libmount1 (>= 2.30), libpam0g (>= 0.99.7.1), libseccomp2 (>= 2.4.1), libsystemd0 (= 247.3-7+deb11u4), util-linux (>= 2.27.1), mount (>= 2.26), adduser
+Recommends: dbus, systemd-timesyncd | time-daemon
+Suggests: systemd-container, policykit-1
+Conflicts: consolekit, libpam-ck-connector
+Breaks: python-dbusmock (<< 0.18), python3-dbusmock (<< 0.18), resolvconf (<< 1.83~), systemd-shim (<< 10-4~), udev (<< 247~)
+Filename: ./systemd_247.3-7+deb11u4_amd64.deb
+Size: 4501976
+MD5sum: 18cd455ad7a5f380d7c9a62bda41a38c
+SHA1: dfbad67c60d6d0c3cb3e7e8b00ba4dfdabf06606
+SHA256: a55f90e5fc83cf8dec83d93615ed7fc4654b92a359ef578095d36fcd621130c3
+Section: admin
+Priority: important
+Multi-Arch: foreign
+Homepage: https://www.freedesktop.org/wiki/Software/systemd
+Description: system and service manager
+ systemd is a system and service manager for Linux. It provides aggressive
+ parallelization capabilities, uses socket and D-Bus activation for starting
+ services, offers on-demand starting of daemons, keeps track of processes using
+ Linux control groups, maintains mount and automount points and implements an
+ elaborate transactional dependency-based service control logic.
+ .
+ systemd is compatible with SysV and LSB init scripts and can work as a
+ drop-in replacement for sysvinit.
+ .
+ Installing the systemd package will not switch your init system unless you
+ boot with init=/lib/systemd/systemd or install systemd-sysv in addition.
+
 Package: systemd-sysv
 Source: systemd
 Version: 247.3-7
@@ -23249,6 +23326,30 @@ Size: 131056
 MD5sum: 41949d10d636de8fdf82946463e3f930
 SHA1: c8f2b7fab3bbaa5510c869bf6b0ed255ea176268
 SHA256: 0dcfcbd193e135a5e4d43bad443c02ba4d7d9486860692badfaf832e3846cca4
+Section: admin
+Priority: standard
+Multi-Arch: foreign
+Homepage: https://www.freedesktop.org/wiki/Software/systemd
+Description: minimalistic service to synchronize local time with NTP servers
+ The package contains the systemd-timesyncd system service that may be used to
+ synchronize the local system clock with a remote Network Time Protocol server.
+
+Package: systemd-timesyncd
+Source: systemd
+Version: 247.3-7+deb11u4
+Architecture: amd64
+Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+Installed-Size: 207
+Depends: libc6 (>= 2.29), systemd (= 247.3-7+deb11u4), adduser
+Conflicts: time-daemon
+Breaks: systemd (<< 245.4-2~)
+Replaces: systemd (<< 245.4-2~), time-daemon
+Provides: time-daemon
+Filename: ./systemd-timesyncd_247.3-7+deb11u4_amd64.deb
+Size: 131496
+MD5sum: 95584a1d1e4f772778571d8aa3dccc97
+SHA1: 9c324730330a1bd94e8341f2181ca67f5f1a3ce4
+SHA256: a6cdbec962601cc7c7d6340b89b973028869f159df1049577c77cbfe1f08e894
 Section: admin
 Priority: standard
 Multi-Arch: foreign
