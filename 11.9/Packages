@@ -329,19 +329,19 @@ Description: automatically configure HTTPS using Let's Encrypt
  and the manual authenticators.
 
 Package: containerd.io
-Version: 1.6.28-2
+Version: 1.6.31-1
 Architecture: amd64
 Maintainer: Containerd team <help@containerd.io>
-Installed-Size: 115025
+Installed-Size: 115584
 Depends: libc6 (>= 2.14), libseccomp2 (>= 2.5.0)
 Conflicts: containerd, runc
 Replaces: containerd, runc
 Provides: containerd, runc
-Filename: ./containerd.io_1.6.28-2_amd64.deb
-Size: 29685092
-MD5sum: dd230298dd968ee04dd50c859b3de6a2
-SHA1: 4ee59ad13d0d34003165d679afe2ae88219b1c9b
-SHA256: b2ce68fb19aac1e1dc4c0a5fb9431995d688176b151d78459b000b495ef56a31
+Filename: ./containerd.io_1.6.31-1_amd64.deb
+Size: 29813716
+MD5sum: ca3e613bf60d9a47e735dd2984b4fb2c
+SHA1: aed2fac6498f04611578bca829d91cd38012a739
+SHA256: 54c8f6fe77e84cbe3b1f06ead3c80b1f7f5fd1b5ecbf72228a1201d9c53faf36
 Section: devel
 Priority: optional
 Homepage: https://containerd.io
@@ -507,20 +507,20 @@ Description: information about the distributions' releases (data files)
  This package contains the data files.
 
 Package: docker-ce
-Version: 5:26.0.0-1~debian.11~bullseye
+Version: 5:26.0.2-1~debian.11~bullseye
 Architecture: amd64
 Maintainer: Docker <support@docker.com>
-Installed-Size: 106383
+Installed-Size: 106412
 Depends: containerd.io (>= 1.6.24), docker-ce-cli, iptables, libseccomp2 (>= 2.3.0), libc6 (>= 2.14), libsystemd0
 Recommends: apparmor, ca-certificates, docker-ce-rootless-extras, git, libltdl7, pigz, procps, xz-utils
 Suggests: aufs-tools, cgroupfs-mount | cgroup-lite
 Conflicts: docker (<< 1.5~), docker-engine, docker-engine-cs, docker.io, lxc-docker, lxc-docker-virtual-package
 Replaces: docker-engine
-Filename: ./docker-ce_5%253a26.0.0-1~debian.11~bullseye_amd64.deb
-Size: 25077424
-MD5sum: 707a8f8d1f91f91235f6606e275e49ad
-SHA1: e8268b8c76b22827297fe15c0dfde82c8d646c30
-SHA256: 6e0ebc7a8a5653e901df2f4cda22d0370da6bc5a3ce371bfbc3f484ef2da9e6b
+Filename: ./docker-ce_5%253a26.0.2-1~debian.11~bullseye_amd64.deb
+Size: 25075592
+MD5sum: 02165632c1b1c4f8304b6c3e88233e52
+SHA1: a419fffc4ab5f97e353a8fb67aa8458e4c00e5b6
+SHA256: 9e9f0883c048359682e9e02b5f05f58d866b36fbed6c9b64aa80297d44081207
 Section: admin
 Priority: optional
 Homepage: https://www.docker.com
@@ -537,20 +537,20 @@ Description: Docker: the open-source application container engine
 
 Package: docker-ce-cli
 Source: docker-ce
-Version: 5:26.0.0-1~debian.11~bullseye
+Version: 5:26.0.2-1~debian.11~bullseye
 Architecture: amd64
 Maintainer: Docker <support@docker.com>
-Installed-Size: 36702
+Installed-Size: 36708
 Depends: libc6 (>= 2.3.2)
 Recommends: docker-buildx-plugin, docker-compose-plugin
 Conflicts: docker (<< 1.5~), docker-engine, docker-engine-cs, docker.io, lxc-docker, lxc-docker-virtual-package
 Breaks: docker-ce (<< 5:0)
 Replaces: docker-ce (<< 5:0)
-Filename: ./docker-ce-cli_5%253a26.0.0-1~debian.11~bullseye_amd64.deb
-Size: 13787128
-MD5sum: de8c41e3a6ac0a00a2eb3e9b138bc020
-SHA1: f25b8c14b20d94a175b633857e4a1ce908896138
-SHA256: 9c97f7e92ef9e386de5c59c72a47e473bbfe41bcc4c881c2048b9b8e922933a7
+Filename: ./docker-ce-cli_5%253a26.0.2-1~debian.11~bullseye_amd64.deb
+Size: 13787500
+MD5sum: bb92fa9087cf70ad392593de9f7ee8ba
+SHA1: aab65ffe39eac861518eee815f23cb1149d0e580
+SHA256: 85dc74e8e51a3031205f7001ab3a921b3440b1b8edb6b220451fde7f7801d28e
 Section: admin
 Priority: optional
 Homepage: https://www.docker.com
@@ -566,17 +566,17 @@ Description: Docker CLI: the open-source application container engine
  depending on a particular stack or provider.
 
 Package: docker-compose-plugin
-Source: docker-ce (5:25.0.5-1~debian.11~bullseye)
-Version: 2.25.0-1~debian.11~bullseye
+Source: docker-ce (5:26.0.1-1~debian.11~bullseye)
+Version: 2.26.1-1~debian.11~bullseye
 Architecture: amd64
 Maintainer: Docker <support@docker.com>
-Installed-Size: 60167
+Installed-Size: 61385
 Enhances: docker-ce-cli
-Filename: ./docker-compose-plugin_2.25.0-1~debian.11~bullseye_amd64.deb
-Size: 12129552
-MD5sum: 7b04acdc2a3d7b6dd3c6bc582bf3e01c
-SHA1: 308cbf298d819f3cd82bc627d326eaa207a2625a
-SHA256: ffb99a4f04fa14e82ccc8d9b2cfde368337683367790ca980310c04a449fe4ea
+Filename: ./docker-compose-plugin_2.26.1-1~debian.11~bullseye_amd64.deb
+Size: 12425436
+MD5sum: baefdf9300c3fd0676eefb658ea2417e
+SHA1: a1df93b222464bcc9deb53484972b06a2c16121c
+SHA256: e091c1a76fde24bf16fd3fbddb86efd7b4844c066e195c7198648d633e640660
 Section: admin
 Priority: optional
 Homepage: https://github.com/docker/compose
@@ -1478,7 +1478,7 @@ Architecture: amd64
 Maintainer: Ben Schermel <ben@eqalpha.com>
 Installed-Size: 153
 Depends: lsb-base (>= 3.2-14), keydb-tools (= 6:6.3.4-1+deb11u1)
-Filename: ./keydb-server_6%253a6.3.4-1+deb11u1_amd64.deb
+Filename: ./keydb-server_6.3.4-1+deb11u1_amd64.deb
 Size: 59744
 MD5sum: f96574c80785b033e7a30a64f1280c04
 SHA1: ffa9299577dabc860a01cd4d105a1b13bb72946d
@@ -1500,7 +1500,7 @@ Architecture: amd64
 Maintainer: Ben Schermel <ben@eqalpha.com>
 Installed-Size: 43362
 Depends: adduser, libbz2-1.0, libc6 (>= 2.30), libcurl4 (>= 7.16.2), libgcc-s1 (>= 3.4), liblz4-1 (>= 0.0~r130), libsnappy1v5 (>= 1.1.8), libssl1.1 (>= 1.1.1), libstdc++6 (>= 9), libsystemd0, libuuid1 (>= 2.16), libzstd1 (>= 1.4.0), zlib1g (>= 1:1.2.0)
-Filename: ./keydb-tools_6%253a6.3.4-1+deb11u1_amd64.deb
+Filename: ./keydb-tools_6.3.4-1+deb11u1_amd64.deb
 Size: 12802588
 MD5sum: 2490d7b8274462f5f49d5a0d169ab627
 SHA1: 57cf5462e1056db89f5bacf8dfea41633fa00fc9
@@ -3817,19 +3817,19 @@ Description: Shared library for the Lua interpreter version 5.2
 
 Package: libluajit-5.1-2
 Source: luajit
-Version: 2.1.0+openresty20231117-2+0~20240316.6+debian11~1.gbp476209
+Version: 2.1.0+openresty20231117-2+0~20240418.7+debian11~1.gbp0a862c
 Architecture: amd64
 Maintainer: Debian Lua Team <pkg-lua-devel@lists.alioth.debian.org>
 Installed-Size: 601
-Depends: libluajit-5.1-common (= 2.1.0+openresty20231117-2+0~20240316.6+debian11~1.gbp476209), libc6 (>= 2.29), libgcc-s1 (>= 3.3)
+Depends: libluajit-5.1-common (= 2.1.0+openresty20231117-2+0~20240418.7+debian11~1.gbp0a862c), libc6 (>= 2.29), libgcc-s1 (>= 3.3)
 Conflicts: libluajit2-5.1-2
 Replaces: libluajit2-5.1-2
 Provides: libluajit-5.1.so.2
-Filename: ./libluajit-5.1-2_2.1.0+openresty20231117-2+0~20240316.6+debian11~1.gbp476209_amd64.deb
-Size: 259248
-MD5sum: 6529e69568aab80861cb23e983c06e66
-SHA1: 47088734a60f0cad44aeee42e16340131476cf5c
-SHA256: 70abb4cab810a40339a7cde3ef773638945b60d523282e375afd2318b46e1c49
+Filename: ./libluajit-5.1-2_2.1.0+openresty20231117-2+0~20240418.7+debian11~1.gbp0a862c_amd64.deb
+Size: 259364
+MD5sum: 4fd4df03a97d38f8b96d390f559a57af
+SHA1: 06b4a57cdb376c1e31c0b4e879714d8ff4e4c82c
+SHA256: 0c6a1f27a04f032e2e6c6dd998769515244659917eb8a94f0dd3b74fb8beca57
 Section: interpreters
 Priority: optional
 Multi-Arch: same
@@ -3844,17 +3844,17 @@ Description: OpenResty-maintained branch of LuaJIT (shared objects)
 
 Package: libluajit-5.1-common
 Source: luajit
-Version: 2.1.0+openresty20231117-2+0~20240316.6+debian11~1.gbp476209
+Version: 2.1.0+openresty20231117-2+0~20240418.7+debian11~1.gbp0a862c
 Architecture: all
 Maintainer: Debian Lua Team <pkg-lua-devel@lists.alioth.debian.org>
 Installed-Size: 219
 Conflicts: libluajit2-5.1-common
 Replaces: libluajit2-5.1-common
-Filename: ./libluajit-5.1-common_2.1.0+openresty20231117-2+0~20240316.6+debian11~1.gbp476209_all.deb
-Size: 47344
-MD5sum: b152b95aa44248c79ef2942464ad1e76
-SHA1: 99ab0c5c2109c16e59933a6f351b242e61c0a7bd
-SHA256: f62ad2d7e8e2063cfc68e366fc96e9d03204cd1d359b13966346fd3ac6162097
+Filename: ./libluajit-5.1-common_2.1.0+openresty20231117-2+0~20240418.7+debian11~1.gbp0a862c_all.deb
+Size: 47392
+MD5sum: 12392190683c368a8d7b2ed5b70802a1
+SHA1: a7a1b0ba7698fc8552103906d60c41851a74cb41
+SHA256: ee0652262e8d79e20c32b6b4bc3f25613fe8a5c514156ed8da5b8f7aaa6a7d01
 Section: interpreters
 Priority: optional
 Multi-Arch: foreign
@@ -4558,18 +4558,18 @@ Description: HTTP image filter module for Nginx
  interlacing and more.
 
 Package: libnginx-mod-http-lua
-Source: libnginx-mod-http-lua (1:0.10.26-2+0~20240322.5+debian11~1.gbpb6cd61)
-Version: 1:0.10.26+1.24.0-2+0~20240322.5+debian11~1.gbpb6cd61
+Source: libnginx-mod-http-lua (1:0.10.26-2+0~20240418.6+debian11~1.gbpb6cd61)
+Version: 1:0.10.26+1.24.0-2+0~20240418.6+debian11~1.gbpb6cd61
 Architecture: amd64
 Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
-Installed-Size: 468
+Installed-Size: 469
 Depends: lua-resty-core (<< 0.1.28.1~), lua-resty-core (>= 0.1.28), libnginx-mod-http-ndk, nginx-abi-1.24.0-1, libc6 (>= 2.14), libluajit-5.1-2 (>= 2.1-20220411) | libluajit-5.1-2 (>= 2.1.0~beta3)
 Recommends: nginx
-Filename: ./libnginx-mod-http-lua_1%253a0.10.26+1.24.0-2+0~20240322.5+debian11~1.gbpb6cd61_amd64.deb
-Size: 159328
-MD5sum: cce9ee19c5638f0115aedd0ad3dd4a5f
-SHA1: 4ec85c53e54fc29a8531c23782cd117d954e7d35
-SHA256: 2823036ff18a9d40d450507e464dd696761b1750122db9c1fd423c8ed627917b
+Filename: ./libnginx-mod-http-lua_1%253a0.10.26+1.24.0-2+0~20240418.6+debian11~1.gbpb6cd61_amd64.deb
+Size: 159420
+MD5sum: 9ccfe750310f1c5746a1e0f5b05bf89d
+SHA1: 7a13736d4d378aa3a0c6c12842daecbf1bbd0a5e
+SHA256: c19576e697c74cf0c50ec7432d492bdb9d205e6839a3d771001ec2e4e387e807
 Section: httpd
 Priority: optional
 Multi-Arch: foreign
@@ -7875,25 +7875,6 @@ Description: MariaDB client common configuration files package (e.g. /etc/mysql/
  This package includes files needed by all versions of the client library
  (e.g. /etc/mysql/my.cnf).
 
-Package: ncdu
-Version: 1.15.1-1
-Architecture: amd64
-Maintainer: Eugene V. Lyubimkin <jackyf@debian.org>
-Installed-Size: 108
-Depends: libc6 (>= 2.14), libncursesw6 (>= 6), libtinfo6 (>= 6)
-Filename: ./ncdu_1.15.1-1_amd64.deb
-Size: 46872
-MD5sum: 7df7c4c2bcab78b4cc0f746e9337408b
-SHA1: c56eb8504332ebf80b2781740c6b4ed635a924c4
-SHA256: 5e80f135d9e0d1cb12c0aa36b3efba9358b36767dbf3d7ac455f2a9efd59e719
-Section: admin
-Priority: optional
-Homepage: http://dev.yorhel.nl/ncdu/
-Description: ncurses disk usage viewer
- Ncdu is a ncurses-based du viewer. It provides a fast and easy-to-use interface
- through famous du utility. It allows one to browse through the directories and
- show percentages of disk usage with ncurses library.
-
 Package: nginx
 Version: 1.18.0-6.1+deb11u3
 Architecture: all
@@ -8480,17 +8461,17 @@ Description: AST extension for PHP 7
 
 Package: php7.4-bcmath
 Source: php7.4
-Version: 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414
+Version: 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 68
-Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414), libc6 (>= 2.14)
+Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef), libc6 (>= 2.14)
 Provides: php-bcmath
-Filename: ./php7.4-bcmath_1%253a7.4.33-8+0~20230904.88+debian11~1.gbp87c414_amd64.deb
+Filename: ./php7.4-bcmath_1%253a7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef_amd64.deb
 Size: 14920
-MD5sum: d86566c77a539bf68ddfbacdb647d677
-SHA1: d1d53ec1063c3846b21970530e2d70075db38da1
-SHA256: 5e6efac23bd3c2325b7d9d77ca95a8e3fa00162df748257875a74aa253cb5da5
+MD5sum: 0d1fed93cd1dc6cfd33493b479e95302
+SHA1: 4a0faed1ce06b1f618dc14fe34fe680135de1c0a
+SHA256: be5842553ee2b672c22a28f7f846e91e2e1aeb13351b088bd1290aec5dfead90
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -8503,17 +8484,17 @@ Description: Bcmath module for PHP
 
 Package: php7.4-bz2
 Source: php7.4
-Version: 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414
+Version: 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 56
-Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414), libbz2-1.0, libc6 (>= 2.14)
+Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef), libbz2-1.0, libc6 (>= 2.14)
 Provides: php-bz2
-Filename: ./php7.4-bz2_1%253a7.4.33-8+0~20230904.88+debian11~1.gbp87c414_amd64.deb
-Size: 10420
-MD5sum: 0ddd6188dab9fa1a7ae4273d27b7802c
-SHA1: 9b1bb8098390a641e942184ec12264340480d8f0
-SHA256: 5d5fd05ef72ca91208d797c76e17db6f063e26bdb61dc86d4a0ed7d150820195
+Filename: ./php7.4-bz2_1%253a7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef_amd64.deb
+Size: 10428
+MD5sum: 28f20c5431ade461aae213691d0cc768
+SHA1: b1ddbacf4e059f8c37a836d246b19fdadba25e47
+SHA256: 2b5f6400ae1a14b100a2bd25abbdd5e63036861198050241d2caf1759296bdad
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -8526,18 +8507,18 @@ Description: bzip2 module for PHP
 
 Package: php7.4-cgi
 Source: php7.4
-Version: 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414
+Version: 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 9145
-Depends: libmagic1, media-types | mime-support, php7.4-cli, php7.4-common (= 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414), php7.4-json, php7.4-opcache, tzdata, ucf, libargon2-1 (>= 0~20171227), libc6 (>= 2.29), libpcre2-8-0 (>= 10.38), libsodium23 (>= 1.0.14), libssl1.1 (>= 1.1.0), libxml2 (>= 2.8.0), zlib1g (>= 1:1.1.4)
+Depends: media-types | mime-support, php7.4-cli, php7.4-common (= 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef), php7.4-json, php7.4-opcache, tzdata, ucf, libargon2-1 (>= 0~20171227), libc6 (>= 2.29), libpcre2-8-0 (>= 10.38), libsodium23 (>= 1.0.14), libssl1.1 (>= 1.1.0), libxml2 (>= 2.8.0), zlib1g (>= 1:1.1.4)
 Suggests: php-pear
 Provides: php-cgi, phpapi-20190902
-Filename: ./php7.4-cgi_1%253a7.4.33-8+0~20230904.88+debian11~1.gbp87c414_amd64.deb
-Size: 1393728
-MD5sum: 37ad2e227f7001a581f305e6027f04ca
-SHA1: c4fb4817e9ebd944551daefeb29d89b8b4a19966
-SHA256: 2b4e66caeb40ca7da8d1df7c16aad569793d1efc185ba0849ce4ee22f35e3555
+Filename: ./php7.4-cgi_1%253a7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef_amd64.deb
+Size: 1392064
+MD5sum: d5c805f027b3344d3b454dc0bec197f1
+SHA1: 3cadfb5a1042da0ecd3d829150c8d20e456d74b1
+SHA256: e934b790c013b2f35c4f841189a1abc5a88e0d878362364d1ebc82ad530d0d5e
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -8556,18 +8537,18 @@ Description: server-side, HTML-embedded scripting language (CGI binary)
 
 Package: php7.4-cli
 Source: php7.4
-Version: 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414
+Version: 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 4716
-Depends: libedit2 (>= 2.11-20080614-4), libmagic1, media-types | mime-support, php7.4-common (= 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414), php7.4-json, php7.4-opcache, php7.4-readline, tzdata, ucf, libargon2-1 (>= 0~20171227), libc6 (>= 2.29), libpcre2-8-0 (>= 10.38), libsodium23 (>= 1.0.14), libssl1.1 (>= 1.1.0), libxml2 (>= 2.8.0), zlib1g (>= 1:1.1.4)
+Depends: libedit2 (>= 2.11-20080614-4), media-types | mime-support, php7.4-common (= 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef), php7.4-json, php7.4-opcache, php7.4-readline, tzdata, ucf, libargon2-1 (>= 0~20171227), libc6 (>= 2.29), libpcre2-8-0 (>= 10.38), libsodium23 (>= 1.0.14), libssl1.1 (>= 1.1.0), libxml2 (>= 2.8.0), zlib1g (>= 1:1.1.4)
 Suggests: php-pear
 Provides: php-cli, phpapi-20190902
-Filename: ./php7.4-cli_1%253a7.4.33-8+0~20230904.88+debian11~1.gbp87c414_amd64.deb
-Size: 1431512
-MD5sum: 8dd4afce70945f1f22b4aceb34fdc8c1
-SHA1: b53f570267d7633c493f5283ccfa12b3b1d5aa5a
-SHA256: 7f4780eb926aaaf241c32ee51f7cce3425040a1aec9f5393a0d398bf41e83ab0
+Filename: ./php7.4-cli_1%253a7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef_amd64.deb
+Size: 1432592
+MD5sum: abfcdc00cc84cc64f324f7054bd0cac3
+SHA1: 016a7ee8a5836ed44c316d94a3b2d59a32624900
+SHA256: 8c0f1bbde530fcbabd7c78bc2dbc6f4c098cde8cba9553b5137254df88687e87
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -8584,18 +8565,18 @@ Description: command-line interpreter for the PHP scripting language
 
 Package: php7.4-common
 Source: php7.4
-Version: 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414
+Version: 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 7026
 Depends: php-common (>= 1:81~), ucf, libc6 (>= 2.27), libffi7 (>= 3.3~20180313), libssl1.1 (>= 1.1.0)
 Breaks: gforge-common (<< 6), php7.0-curl (<< 7.0.33-1~), php7.2-sodium (<< 7.2.12~)
 Provides: php-calendar, php-ctype, php-exif, php-ffi, php-fileinfo, php-ftp, php-iconv, php-pdo, php-phar, php-posix, php-shmop, php-sockets, php-sysvmsg, php-sysvsem, php-sysvshm, php-tokenizer, php7.4-calendar, php7.4-ctype, php7.4-exif, php7.4-ffi, php7.4-fileinfo, php7.4-ftp, php7.4-gettext, php7.4-iconv, php7.4-pdo, php7.4-phar, php7.4-posix, php7.4-shmop, php7.4-sockets, php7.4-sysvmsg, php7.4-sysvsem, php7.4-sysvshm, php7.4-tokenizer
-Filename: ./php7.4-common_1%253a7.4.33-8+0~20230904.88+debian11~1.gbp87c414_amd64.deb
-Size: 648224
-MD5sum: 665ee1eb2bed5cdb37da1c47af33dcfe
-SHA1: 7ac161b582029318a6982d871a36937e91254238
-SHA256: 366e721e22b6786df6a82c4646927ddc0859bceca99f74675af7d2f3872799a7
+Filename: ./php7.4-common_1%253a7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef_amd64.deb
+Size: 648876
+MD5sum: 4d7f53def2e32f00400dc9227725557e
+SHA1: da27a47a5961f877340032e1a3403c21230e813a
+SHA256: 39123b9af3b0af754ac37b6729e1caa885acc35a85dcb15c39af087f735cd9e9
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -8608,18 +8589,18 @@ Description: documentation, examples and common module for PHP
 
 Package: php7.4-curl
 Source: php7.4
-Version: 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414
+Version: 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 132
-Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414), libc6 (>= 2.14), libcurl4 (>= 7.56.1)
+Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef), libc6 (>= 2.14), libcurl4 (>= 7.56.1)
 Breaks: php7.0-curl (<< 7.0.33-1~)
 Provides: php-curl
-Filename: ./php7.4-curl_1%253a7.4.33-8+0~20230904.88+debian11~1.gbp87c414_amd64.deb
-Size: 31088
-MD5sum: bf5480a2378d69a20510b62dff925959
-SHA1: bdc0802e4ba01f4c3f35727750088c3c10da8501
-SHA256: f0cfd272eaf6d058975c016e9739c95f9495b03edca081702e78bbbb18b09218
+Filename: ./php7.4-curl_1%253a7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef_amd64.deb
+Size: 31076
+MD5sum: d59fcfc8ef4c72bfb2f745bcc6d08193
+SHA1: 188ddae90b7af4fd3bec6d92ea9e11f28e20e77c
+SHA256: 36700588f2f0cf80940c36b7642e3d5b744499c30ad8e1fada9715b099123fae
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -8632,17 +8613,17 @@ Description: CURL module for PHP
 
 Package: php7.4-dba
 Source: php7.4
-Version: 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414
+Version: 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 96
-Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414), libc6 (>= 2.14), libdb5.3, liblmdb0 (>= 0.9.7), libqdbm14 (>= 1.8.74)
+Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef), libc6 (>= 2.14), libdb5.3, liblmdb0 (>= 0.9.7), libqdbm14 (>= 1.8.74)
 Provides: php-dba
-Filename: ./php7.4-dba_1%253a7.4.33-8+0~20230904.88+debian11~1.gbp87c414_amd64.deb
-Size: 23596
-MD5sum: df1e401ddacb29c2e799ccb12d44f2d6
-SHA1: 5b861ba2f85e2a8aba361ddfd1792bb177185d1b
-SHA256: 0aa9e4cd8d3da3cde64c99ba10afed50a9795cb8dba63b2cffe6d74ca0fda68a
+Filename: ./php7.4-dba_1%253a7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef_amd64.deb
+Size: 23640
+MD5sum: 8c59cf112bdcca7c272219b3aad17df4
+SHA1: 8e165df356f2a2d9e270343fe749a897b87daa53
+SHA256: 26b66afac949d055a05e23a490375f64ce6664754205268cdda5275ff391f5d8
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -8678,18 +8659,18 @@ Description: Arbitrary precision floating-point decimal for PHP
 
 Package: php7.4-dev
 Source: php7.4
-Version: 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414
+Version: 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 4716
-Depends: autoconf (>= 2.63), automake (>= 1.11), libpcre2-dev (>= 10.30), libssl-dev, php7.4-cli (>= 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414), php7.4-common (= 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414), pkg-config, shtool, libtool (>= 2.4.6-0.1~)
+Depends: autoconf (>= 2.63), automake (>= 1.11), libpcre2-dev (>= 10.30), libssl-dev, php7.4-cli (>= 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef), php7.4-common (= 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef), pkg-config, shtool, libtool (>= 2.4.6-0.1~)
 Recommends: pkg-php-tools
 Suggests: dh-php
-Filename: ./php7.4-dev_1%253a7.4.33-8+0~20230904.88+debian11~1.gbp87c414_amd64.deb
-Size: 427596
-MD5sum: 1ce65e0fff8c1934594595308a5aa41f
-SHA1: daaa854d26e914977337b654ddfcbf976756a7aa
-SHA256: 44e1ae9d0294fcb96b3677c3b6a7f6f0d320251d82154e312e5b371b943df30b
+Filename: ./php7.4-dev_1%253a7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef_amd64.deb
+Size: 427508
+MD5sum: 1cdc346e10551e29e0f9aac519567ec5
+SHA1: 73dcb9334c999d520dd94a5d82d7d2a9ff4603b8
+SHA256: e9de8163482fa21350464b0777748b0ffe281f004a9e2771cf4bb78c8dd729e5
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -8726,17 +8707,17 @@ Description: PHP extension providing efficient data structures for PHP 7
 
 Package: php7.4-enchant
 Source: php7.4
-Version: 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414
+Version: 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 56
-Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414), libc6 (>= 2.14), libenchant-2-2 (>= 2.2.3)
+Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef), libc6 (>= 2.14), libenchant-2-2 (>= 2.2.3)
 Provides: php-enchant
-Filename: ./php7.4-enchant_1%253a7.4.33-8+0~20230904.88+debian11~1.gbp87c414_amd64.deb
-Size: 8972
-MD5sum: e77beb1fc1f29583dd4073759cc4b85d
-SHA1: 40870c2bc45cb64a526c0a560e7de93eb9a2a598
-SHA256: 40f9120df9efedf4257a18f776cc0c7287d1ef6a5af06275c6a58e29b1b76eab
+Filename: ./php7.4-enchant_1%253a7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef_amd64.deb
+Size: 8976
+MD5sum: ca95cd4435b1d6c542c7d92a075a29c9
+SHA1: 509722d6ad1061777b4489bf79380a8cbbb84e87
+SHA256: 61c1166107ad7f8d39ad938740df2ffeb1e3b1d0c013eff83f1d3a18c64832f7
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -8773,18 +8754,18 @@ Description: Interrupting timer and low-overhead sampling profiler for PHP
 
 Package: php7.4-fpm
 Source: php7.4
-Version: 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414
+Version: 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 4754
-Depends: libmagic1, media-types | mime-support, php7.4-cli, php7.4-common (= 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414), php7.4-json, php7.4-opcache, procps, systemd | systemd-tmpfiles, tzdata, ucf, libacl1 (>= 2.2.23), libapparmor1 (>= 2.7.0~beta1+bzr1772), libargon2-1 (>= 0~20171227), libc6 (>= 2.29), libpcre2-8-0 (>= 10.38), libsodium23 (>= 1.0.14), libssl1.1 (>= 1.1.0), libsystemd0, libxml2 (>= 2.8.0), zlib1g (>= 1:1.1.4)
+Depends: media-types | mime-support, php7.4-cli, php7.4-common (= 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef), php7.4-json, php7.4-opcache, procps, systemd | systemd-tmpfiles, tzdata, ucf, libacl1 (>= 2.2.23), libapparmor1 (>= 2.7.0~beta1+bzr1772), libargon2-1 (>= 0~20171227), libc6 (>= 2.29), libpcre2-8-0 (>= 10.38), libsodium23 (>= 1.0.14), libssl1.1 (>= 1.1.0), libsystemd0, libxml2 (>= 2.8.0), zlib1g (>= 1:1.1.4)
 Suggests: php-pear
 Provides: php-fpm, phpapi-20190902
-Filename: ./php7.4-fpm_1%253a7.4.33-8+0~20230904.88+debian11~1.gbp87c414_amd64.deb
-Size: 1445396
-MD5sum: 5d0dc00dd20d77945bd58a021d560a2f
-SHA1: aa6e15bdff629f1f222d3896a95aabe512d2eae8
-SHA256: 41831f93cc7cd6b5eeaa3da6b9a4a348ce22633f685eba34603adb4c9d8a7571
+Filename: ./php7.4-fpm_1%253a7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef_amd64.deb
+Size: 1444544
+MD5sum: 6b29cdf1a98913a827194f26787d8694
+SHA1: b7779e91efaa47576cb3652d1afd0fcd6626dbda
+SHA256: 16609536f79c9016b7ed89e2c6bfff542b6c0ffabb7bb5ad5ff334ba2605e683
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -8802,17 +8783,17 @@ Description: server-side, HTML-embedded scripting language (FPM-CGI binary)
 
 Package: php7.4-gd
 Source: php7.4
-Version: 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414
+Version: 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 140
-Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414), libc6 (>= 2.4), libgd3 (>= 2.1.1)
+Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef), libc6 (>= 2.4), libgd3 (>= 2.1.1)
 Provides: php-gd
-Filename: ./php7.4-gd_1%253a7.4.33-8+0~20230904.88+debian11~1.gbp87c414_amd64.deb
-Size: 27976
-MD5sum: 745b86a0899bc3ce8e24d2c4bf28bff0
-SHA1: 5dede37accb4eef40e4efde8c7c7ae6e11ab4e5c
-SHA256: 2ed165184cda80dc7a103bcba61ce4eea50ac4a89b168e959b104fd8955c6a32
+Filename: ./php7.4-gd_1%253a7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef_amd64.deb
+Size: 27952
+MD5sum: 8cec10aa4860cd707ddb7c617ea8debd
+SHA1: 869e11e8d9bb452bf7c2edf740cb8b97834869dc
+SHA256: 6be9701757086ceffa23ad426f32dd5efee0363c018ea4f8b0278d1711ef8340
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -8902,17 +8883,17 @@ Description: Provides a wrapper to the GraphicsMagick library
 
 Package: php7.4-gmp
 Source: php7.4
-Version: 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414
+Version: 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 92
-Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414), libc6 (>= 2.4), libgmp10
+Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef), libc6 (>= 2.4), libgmp10
 Provides: php-gmp
-Filename: ./php7.4-gmp_1%253a7.4.33-8+0~20230904.88+debian11~1.gbp87c414_amd64.deb
-Size: 18556
-MD5sum: 0e33ba68251c535bc1c783f9b20d06b4
-SHA1: c5b6aa92fb493b03167e1214b7920fd62bd57e94
-SHA256: 9a728532c76cbfbcbfcf1d5f9de23da44b147744790d3825ec124e32b32d1132
+Filename: ./php7.4-gmp_1%253a7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef_amd64.deb
+Size: 18512
+MD5sum: a3d6cccc24c66b29b422f35077105fc1
+SHA1: a732d2a1b9f62cd29bed9d19c9f7a74da8b3c9f5
+SHA256: 976a88fafeb6bfd6fa40ea20ad5d0fc31b8b7c01ec044495985994b4a64920a8
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -9054,17 +9035,17 @@ Description: Provides a wrapper to the ImageMagick library
 
 Package: php7.4-imap
 Source: php7.4
-Version: 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414
+Version: 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 132
-Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414), libc-client2007e, libc6 (>= 2.14)
+Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef), libc-client2007e, libc6 (>= 2.14)
 Provides: php-imap
-Filename: ./php7.4-imap_1%253a7.4.33-8+0~20230904.88+debian11~1.gbp87c414_amd64.deb
-Size: 30948
-MD5sum: eb4346512bb8a68da62fb1ce90e918f0
-SHA1: ffe67530ecb2c83049cadcfe52b60d9f5a88221e
-SHA256: d994a85e4e9cb234af94a9c6b84b46ec0f83f717d48d3e9d2e1187dade926385
+Filename: ./php7.4-imap_1%253a7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef_amd64.deb
+Size: 30932
+MD5sum: 1a63a8ff66ab21ff76cf9f910b3214ec
+SHA1: ed605a5ed674c3c366002dfd7c8f4b2fa999c805
+SHA256: b91183b35f80f6b56ac2d1e8794f49fa59073bf486b2ffe96e13ab5f104dae41
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -9099,17 +9080,17 @@ Description: Inotify bindings for PHP
 
 Package: php7.4-interbase
 Source: php7.4
-Version: 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414
+Version: 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 64
-Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414), libc6 (>= 2.14), libfbclient2 (>= 2.5.0.25784~ReleaseCandidate1.ds2)
+Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef), libc6 (>= 2.14), libfbclient2 (>= 2.5.0.25784~ReleaseCandidate1.ds2)
 Provides: php-pdo-firebird, php7.4-pdo-firebird
-Filename: ./php7.4-interbase_1%253a7.4.33-8+0~20230904.88+debian11~1.gbp87c414_amd64.deb
-Size: 14440
-MD5sum: 3fa3cc60ca09e440e8488a1feffa6985
-SHA1: 81e444880b7108c16888d6ba67264e26ae94c7c1
-SHA256: 641df7f962db4e0d011f5fcc5e38009947bb4eaac70f6311f51f8643aa902e62
+Filename: ./php7.4-interbase_1%253a7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef_amd64.deb
+Size: 14416
+MD5sum: f8936a006c1e93187faf2d67010034a3
+SHA1: 66d7f5f130564ce56c54fe92e761e17c678f10f7
+SHA256: 66e3ce1054533541193c8bfef338026519a416b98ca19ee81b9c092773bceaa4
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -9122,17 +9103,17 @@ Description: Interbase module for PHP
 
 Package: php7.4-intl
 Source: php7.4
-Version: 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414
+Version: 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 484
-Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414), libc6 (>= 2.14), libgcc-s1 (>= 3.0), libicu67 (>= 67.1-1~), libstdc++6 (>= 4.9)
+Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef), libc6 (>= 2.14), libgcc-s1 (>= 3.0), libicu67 (>= 67.1-1~), libstdc++6 (>= 4.9)
 Provides: php-intl
-Filename: ./php7.4-intl_1%253a7.4.33-8+0~20230904.88+debian11~1.gbp87c414_amd64.deb
-Size: 122808
-MD5sum: b1e29103328fc7ea66eb101b19149165
-SHA1: 8adbb4a4f86bd4f8c956ce7ee7add1dadcd14238
-SHA256: 0a25ebbb7bb9603fbf6bd1801e94faf91cf278a98dc3c980df035612d1ddeeaf
+Filename: ./php7.4-intl_1%253a7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef_amd64.deb
+Size: 122512
+MD5sum: 06a1ffe30465c8e40d1a9ec2459958a9
+SHA1: 9e4627eca102926bf472464584afa9cd7caf9847
+SHA256: 7a5f7ca3a8fc032a51cbbb2cc4a42646e8a35bb5a9a97b16b3831112fd48a6b3
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -9145,17 +9126,17 @@ Description: Internationalisation module for PHP
 
 Package: php7.4-json
 Source: php7.4
-Version: 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414
+Version: 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 76
-Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414), libc6 (>= 2.14)
+Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef), libc6 (>= 2.14)
 Provides: php-json
-Filename: ./php7.4-json_1%253a7.4.33-8+0~20230904.88+debian11~1.gbp87c414_amd64.deb
-Size: 19340
-MD5sum: 951bc902b9f43e34608e7877afbdd70a
-SHA1: cc9c302238d0e70beab6caf454a74239397a9821
-SHA256: 77d604541b59c7ef33c1e90261c02184e182b2c1d3fe64dfb7e9b1ad93b4a179
+Filename: ./php7.4-json_1%253a7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef_amd64.deb
+Size: 19344
+MD5sum: b205964983dc313fdb9e4eff9b499f8a
+SHA1: b2df0b8c5f8d9b89231a612a144385b6e77d8d5c
+SHA256: 683ce447214a7258888c82497347acbb899e1061a1073cfb9384253c5da5982c
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -9168,17 +9149,17 @@ Description: JSON module for PHP
 
 Package: php7.4-ldap
 Source: php7.4
-Version: 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414
+Version: 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 128
-Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414), libc6 (>= 2.14), libldap-2.4-2 (>= 2.4.25)
+Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef), libc6 (>= 2.14), libldap-2.4-2 (>= 2.4.25)
 Provides: php-ldap
-Filename: ./php7.4-ldap_1%253a7.4.33-8+0~20230904.88+debian11~1.gbp87c414_amd64.deb
-Size: 29624
-MD5sum: 4155812e59d1a9485ad98d67b642d3b6
-SHA1: aa98283218384e29ad24cbe40a7623ffb8a4a3d2
-SHA256: 34e7c1a3a6ddf9cba4d68ac032b9436d0e112c7cdbf5b1b8fa46c104c58dab24
+Filename: ./php7.4-ldap_1%253a7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef_amd64.deb
+Size: 29692
+MD5sum: 9f965b547929c83850ce9be77495ed95
+SHA1: 86d05c26d5bd9a2a353ec7603a725b25f0d9e663
+SHA256: 2a86c379e7005586dffe378790936d8341c8f8d4f4719622863b85961a0e4b38
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -9305,17 +9286,17 @@ Description: Reader for the MaxMind DB file format for PHP
 
 Package: php7.4-mbstring
 Source: php7.4
-Version: 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414
+Version: 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 1054
-Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414), libc6 (>= 2.14), libonig5 (>= 6.8.1)
+Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef), libc6 (>= 2.14), libonig5 (>= 6.8.1)
 Provides: php-mbstring
-Filename: ./php7.4-mbstring_1%253a7.4.33-8+0~20230904.88+debian11~1.gbp87c414_amd64.deb
-Size: 396692
-MD5sum: 47b4649d7310af3c207b9f062a8738fe
-SHA1: a05f912b6e5d11b831a260430efb5999385951f2
-SHA256: 5c3b5b43666f9587a0b2d41e9015d4b7d36e6ea1e46c9add62c09e3a767c3880
+Filename: ./php7.4-mbstring_1%253a7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef_amd64.deb
+Size: 396220
+MD5sum: ea6dba0fe7a974aa4bbde4cabac06dc2
+SHA1: c8874ad192a59d7061e3c721e68cf7ba312e297e
+SHA256: 2aae43f2abcd2039cf414fbc87d8f0054304cbd9da589f1cf77fb131bf3c27eb
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -9457,17 +9438,17 @@ Description: PHP extension for interfacing with MessagePack
 
 Package: php7.4-mysql
 Source: php7.4
-Version: 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414
+Version: 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 459
-Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414), libc6 (>= 2.15)
+Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef), libc6 (>= 2.15)
 Provides: php-mysqli, php-mysqlnd, php-pdo-mysql, php7.4-mysqli, php7.4-mysqlnd, php7.4-pdo-mysql
-Filename: ./php7.4-mysql_1%253a7.4.33-8+0~20230904.88+debian11~1.gbp87c414_amd64.deb
-Size: 121176
-MD5sum: 654d613760d4bd8ce7c9a6d2cbd61f1b
-SHA1: c32b9c4fd9454d96e6307538b6cc4ff83d54ec34
-SHA256: ba7a6e323179bb960c80c934b03df09eb606d43f7ed75897255da86830414739
+Filename: ./php7.4-mysql_1%253a7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef_amd64.deb
+Size: 121452
+MD5sum: fead2657835932f11a25101610e93fdc
+SHA1: e12db5b2851026fbad303b2db204f45fea0fdad5
+SHA256: da248b44cf5f2d395e2e990c3108bf1c6dd42883337927cba483ca5b8949eab1
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -9507,17 +9488,17 @@ Description: OAuth 1.0 consumer and provider extension
 
 Package: php7.4-odbc
 Source: php7.4
-Version: 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414
+Version: 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 132
-Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414), libc6 (>= 2.14), libodbc1 (>= 2.3.1)
+Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef), libc6 (>= 2.14), libodbc1 (>= 2.3.1)
 Provides: php-odbc, php-pdo-odbc, php7.4-pdo-odbc
-Filename: ./php7.4-odbc_1%253a7.4.33-8+0~20230904.88+debian11~1.gbp87c414_amd64.deb
-Size: 31396
-MD5sum: c70532fccd94ab1ba89a35e2487d0528
-SHA1: cb17b8e144efff444c85298b72d01317b6b3eb10
-SHA256: 8700c1963eba343b0b388ac33970b868388d17ae0fa3df9167e3f19255c1ae95
+Filename: ./php7.4-odbc_1%253a7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef_amd64.deb
+Size: 31340
+MD5sum: 42f096ceab6f874df52d3d11b7484c8e
+SHA1: 2399120490c7dfb09d06a5028f630808724c1940
+SHA256: c6bf5058f6c3adb4d97be3fff9648b16ee2b19339f1d90012c822bbad72e77e6
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -9530,17 +9511,17 @@ Description: ODBC module for PHP
 
 Package: php7.4-opcache
 Source: php7.4
-Version: 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414
+Version: 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 568
-Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414), libc6 (>= 2.27)
+Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef), libc6 (>= 2.27)
 Provides: php-opcache
-Filename: ./php7.4-opcache_1%253a7.4.33-8+0~20230904.88+debian11~1.gbp87c414_amd64.deb
-Size: 197344
-MD5sum: c7eed8079bd346ee3d30b407615ab5a4
-SHA1: 4d618d035c0961891f469cd6decee9d9238d22a1
-SHA256: 4e5f8f4108932f32b0097cb8df9ae03b127298ef9e6591b7e4f591d8e00dd26d
+Filename: ./php7.4-opcache_1%253a7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef_amd64.deb
+Size: 197476
+MD5sum: f281e25611fdbb2cb3bdc6ffb6451027
+SHA1: c9bdcf348405375f2dcc62ebaa81b1dbb3dbc6a3
+SHA256: cd662fb0bc28e2b8d2c1704cdce2a6519ac91dca3f8c02f9cd4af900fe8357f5
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -9575,17 +9556,17 @@ Description: Code coverage driver
 
 Package: php7.4-pgsql
 Source: php7.4
-Version: 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414
+Version: 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 216
-Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414), libc6 (>= 2.14), libpq5 (>= 9.3~)
+Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef), libc6 (>= 2.14), libpq5 (>= 9.3~)
 Provides: php-pdo-pgsql, php-pgsql, php7.4-pdo-pgsql
-Filename: ./php7.4-pgsql_1%253a7.4.33-8+0~20230904.88+debian11~1.gbp87c414_amd64.deb
-Size: 55524
-MD5sum: 7997889c538bc999395ce888a310e57d
-SHA1: 6d5a0a4ad9cf9ec2f6513f0d5cab901a3a6aca6c
-SHA256: 857d38565c351933fe41a1c3a6f15ab7ae26f88e273c9cba63e1de885f4bc1e6
+Filename: ./php7.4-pgsql_1%253a7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef_amd64.deb
+Size: 55536
+MD5sum: 26daba317273cbe5cc039ce0aac45c5f
+SHA1: c126b602824be2da760694e795a5511335df5803
+SHA256: 5d646cb95e64894498d66f732f087f39683bf7f56c78cb62e203bde263cba5dd
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -9650,18 +9631,18 @@ Description: full-stack PHP framework delivered as a C-extension
 
 Package: php7.4-phpdbg
 Source: php7.4
-Version: 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414
+Version: 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 4821
-Depends: libmagic1, media-types | mime-support, php7.4-cli, php7.4-common (= 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414), php7.4-json, php7.4-opcache, tzdata, ucf, libargon2-1 (>= 0~20171227), libc6 (>= 2.29), libpcre2-8-0 (>= 10.38), libsodium23 (>= 1.0.14), libssl1.1 (>= 1.1.0), libxml2 (>= 2.8.0), zlib1g (>= 1:1.1.4)
+Depends: media-types | mime-support, php7.4-cli, php7.4-common (= 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef), php7.4-json, php7.4-opcache, tzdata, ucf, libargon2-1 (>= 0~20171227), libc6 (>= 2.29), libpcre2-8-0 (>= 10.38), libsodium23 (>= 1.0.14), libssl1.1 (>= 1.1.0), libxml2 (>= 2.8.0), zlib1g (>= 1:1.1.4)
 Recommends: php-readline
 Provides: php-phpdbg, phpapi-20190902
-Filename: ./php7.4-phpdbg_1%253a7.4.33-8+0~20230904.88+debian11~1.gbp87c414_amd64.deb
-Size: 1473512
-MD5sum: 7db53e811ae94a97071a577fd0753a46
-SHA1: 392751c594414f4000e32e069771a5aa6b88a000
-SHA256: 3565c4ba5a10ad4aff6f4bfc2204c92241a1b0d5337f61d1599791e97a6b7b3b
+Filename: ./php7.4-phpdbg_1%253a7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef_amd64.deb
+Size: 1473040
+MD5sum: de2f76944648e2b8fad77f4f79a3ffaf
+SHA1: 3ca18bc71d52f428c4fa7e2426b43a993229f8df
+SHA256: b4910ac705c93336c699b84854fca992dcc4d7e4de91df4323002d7ab5979f0e
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -9803,17 +9784,17 @@ Description: ps module for PHP
 
 Package: php7.4-pspell
 Source: php7.4
-Version: 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414
+Version: 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 56
-Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414), libaspell15 (>= 0.60.8), libc6 (>= 2.4)
+Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef), libaspell15 (>= 0.60.8), libc6 (>= 2.4)
 Provides: php-pspell
-Filename: ./php7.4-pspell_1%253a7.4.33-8+0~20230904.88+debian11~1.gbp87c414_amd64.deb
-Size: 8536
-MD5sum: 5210842482063ac6438fc0fc0752f766
-SHA1: a3ed29de8550dae2cf20ab8d69d2adb16f409746
-SHA256: 78773fe7cef182ff23c5b9082bcdebf774f2ee69ea707dcec85670548028a2dc
+Filename: ./php7.4-pspell_1%253a7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef_amd64.deb
+Size: 8532
+MD5sum: 6659c99bf24cfe26af2b606a9406c62a
+SHA1: 06062cb685ef3986ed1560054e37a490501768b2
+SHA256: a6858749840aef10954e5ec813da2bc81ff8b168e0c0042d6c72a3f429e67f05
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -9930,17 +9911,17 @@ Description: Kafka client for PHP based on librdkafka
 
 Package: php7.4-readline
 Source: php7.4
-Version: 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414
+Version: 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 64
-Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414), libc6 (>= 2.14), libedit2 (>= 3.1-20160903-0)
+Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef), libc6 (>= 2.14), libedit2 (>= 3.1-20160903-0)
 Provides: php-readline
-Filename: ./php7.4-readline_1%253a7.4.33-8+0~20230904.88+debian11~1.gbp87c414_amd64.deb
-Size: 12356
-MD5sum: f8fc2537dde092476493e90244590daa
-SHA1: bb175751632e9b02a7f3532acd8033f18b323207
-SHA256: 925c4201091cad3cbe3c8ce8e0fcbed1d855c7355444bb749e4f8260e8222ae0
+Filename: ./php7.4-readline_1%253a7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef_amd64.deb
+Size: 12364
+MD5sum: 654da0f7574c14880c0b3445d0bde4a3
+SHA1: 1a7606650939ab258b7484353442943c8c5bfa61
+SHA256: c1006636113e56d4a857c39e05e164c868835dc27052d5dc93d18ce616396b03
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -10024,18 +10005,18 @@ Description: PHP wrapper for libsmbclient
 
 Package: php7.4-snmp
 Source: php7.4
-Version: 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414
+Version: 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 84
-Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414), libc6 (>= 2.14), libsnmp40 (>= 5.9+dfsg)
+Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef), libc6 (>= 2.14), libsnmp40 (>= 5.9+dfsg)
 Recommends: snmp
 Provides: php-snmp
-Filename: ./php7.4-snmp_1%253a7.4.33-8+0~20230904.88+debian11~1.gbp87c414_amd64.deb
-Size: 18396
-MD5sum: 723272ec5ec9d844df7b631d7f4ae228
-SHA1: 0a1b3de5666b7836397cdd9795a6d54ab669ee42
-SHA256: 36ea8a4b7f5df6adb3cd91cbda2e5e67f99e312b280f0dc62fe6c47abbef914e
+Filename: ./php7.4-snmp_1%253a7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef_amd64.deb
+Size: 18432
+MD5sum: cf7f0ec7019b0160c0403757dd09a650
+SHA1: de6f5c89e1506106a008f925f638c17cb494f589
+SHA256: 75e77207bb2cabb9c1b71c9b40ce0ad48de2f2608e1b90c8d2f1303949cf0b0a
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -10048,17 +10029,17 @@ Description: SNMP module for PHP
 
 Package: php7.4-soap
 Source: php7.4
-Version: 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414
+Version: 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 340
-Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414), libc6 (>= 2.14), libxml2 (>= 2.7.4)
+Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef), libc6 (>= 2.14), libxml2 (>= 2.7.4)
 Provides: php-soap
-Filename: ./php7.4-soap_1%253a7.4.33-8+0~20230904.88+debian11~1.gbp87c414_amd64.deb
-Size: 116724
-MD5sum: 994ca00d6a36d0773eee62f468be846f
-SHA1: 8abaeca34ecc9c44cd1eec0c5cacc8c9aabec7d0
-SHA256: b43825a2cf3f3571c458b65ebf0a0f21f21a82b481e72ff94c98bedecbd0feac
+Filename: ./php7.4-soap_1%253a7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef_amd64.deb
+Size: 116472
+MD5sum: 48364fa0babbf5af058c1fc00f825072
+SHA1: fec8950a6e9b0031d3007af645bb12ccda1c668f
+SHA256: 6e15d04eeba8c6ba6f2c6cd253ac869096f6d4d5ab539e3011c96fca4bcddd4d
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -10115,17 +10096,17 @@ Description: PHP extension for communicating with Apache Solr server
 
 Package: php7.4-sqlite3
 Source: php7.4
-Version: 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414
+Version: 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 124
-Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414), libc6 (>= 2.14), libsqlite3-0 (>= 3.14.0)
+Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef), libc6 (>= 2.14), libsqlite3-0 (>= 3.14.0)
 Provides: php-pdo-sqlite, php-sqlite3, php7.4-pdo-sqlite
-Filename: ./php7.4-sqlite3_1%253a7.4.33-8+0~20230904.88+debian11~1.gbp87c414_amd64.deb
-Size: 26700
-MD5sum: 758fe47501ff5971c26e0607dae66445
-SHA1: fa95adc8f0e7225e8cbf807f560309a90914d27f
-SHA256: 168e7e5b6e0f286e6878c95586119a76cc9e41bb88ca836cf42fe7d51b3dc3de
+Filename: ./php7.4-sqlite3_1%253a7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef_amd64.deb
+Size: 26784
+MD5sum: 318254acee1b908df8387289d3130ff4
+SHA1: ad76001254bd501edc9b5867f0c96bdae47be59b
+SHA256: c0620fe68f5b7a004fe955c300834b6c58fef45e67524f4f442d8ac2ecc636d5
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -10228,17 +10209,17 @@ Description: Swoole Coroutine Fiber Async Programming Framework for PHP
 
 Package: php7.4-sybase
 Source: php7.4
-Version: 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414
+Version: 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 60
-Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414), libc6 (>= 2.14), libsybdb5 (>= 0.63)
+Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef), libc6 (>= 2.14), libsybdb5 (>= 0.63)
 Provides: php-pdo-dblib, php7.4-pdo-dblib
-Filename: ./php7.4-sybase_1%253a7.4.33-8+0~20230904.88+debian11~1.gbp87c414_amd64.deb
-Size: 12092
-MD5sum: b653ff5ecd8492477c4ac30df1d4aaa9
-SHA1: 9f9d8ee4385895b26eb25dd93187c219e29affd8
-SHA256: d8a15e27d7165b0f7ee65d003d5589a3917e4ad42a64e607eeaf4eb4f69a97b0
+Filename: ./php7.4-sybase_1%253a7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef_amd64.deb
+Size: 12100
+MD5sum: edb9bc366451926602fcb3371edf4c17
+SHA1: 45d319380c1f2ba8ae794dc6365f93d6bd742fb3
+SHA256: 09bfa97c3d4cce2766d8915f441354f57dbb982e84733c0fcd417bd281b07ea6
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -10277,17 +10258,17 @@ Description: Tideways PHP Profiler Extension
 
 Package: php7.4-tidy
 Source: php7.4
-Version: 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414
+Version: 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 88
-Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414), libc6 (>= 2.14), libtidy5deb1 (>= 1:5.2.0)
+Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef), libc6 (>= 2.14), libtidy5deb1 (>= 1:5.2.0)
 Provides: php-tidy
-Filename: ./php7.4-tidy_1%253a7.4.33-8+0~20230904.88+debian11~1.gbp87c414_amd64.deb
-Size: 17804
-MD5sum: e03c0aab8fcce638805ae19e106132ff
-SHA1: 47209a4d9a68c1ad481a2e1ddae55a8bab1a9ddc
-SHA256: 3fee80c44559e89fc586a7fa7d98f20cd2f570149f044512b9dbdcc3104d76f6
+Filename: ./php7.4-tidy_1%253a7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef_amd64.deb
+Size: 17748
+MD5sum: 15aab978213b88bc29c6cdc217f83457
+SHA1: eb763b4a8519ea12cf0ed45502bb7342f59280c8
+SHA256: 09051df96cfa95bc141549fb0d02e20e1bfa95359650e5e30fc5520b5525b3b6
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -10466,19 +10447,19 @@ Description: Hierarchical Profiler for PHP 5.x
 
 Package: php7.4-xml
 Source: php7.4
-Version: 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414
+Version: 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 433
-Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414), libc6 (>= 2.14), libxml2 (>= 2.9.0), libxslt1.1 (>= 1.1.25)
+Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef), libc6 (>= 2.14), libxml2 (>= 2.9.0), libxslt1.1 (>= 1.1.25)
 Breaks: php7.4-xsl (<< 7.0.3-6~)
 Replaces: php7.4-xsl (<< 7.0.3-6~)
 Provides: php-dom, php-simplexml, php-xml, php-xmlreader, php-xmlwriter, php-xsl, php7.4-dom, php7.4-simplexml, php7.4-xmlreader, php7.4-xmlwriter, php7.4-xsl
-Filename: ./php7.4-xml_1%253a7.4.33-8+0~20230904.88+debian11~1.gbp87c414_amd64.deb
-Size: 99732
-MD5sum: ffcf9ce30a3376a66968fc49a661da50
-SHA1: 4bfb6a495d9c65888030982c139dad5f3e175a03
-SHA256: ac89cc638978b313d15201d30b936626428b4c24a9be9343fff4001e62902acf
+Filename: ./php7.4-xml_1%253a7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef_amd64.deb
+Size: 99328
+MD5sum: 0491170e90295053628f6d9ce9598697
+SHA1: 77d150c782b020271e7a12bd8ec49d2ce157d089
+SHA256: 8f9b1261bd15f26c817b5ac19d2247928521239a5bad8d7ce8f85192c5935cbb
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -10491,17 +10472,17 @@ Description: DOM, SimpleXML, XML, and XSL module for PHP
 
 Package: php7.4-xmlrpc
 Source: php7.4
-Version: 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414
+Version: 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 68
-Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414), libc6 (>= 2.14), libxmlrpc-epi0
+Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef), libc6 (>= 2.14), libxmlrpc-epi0
 Provides: php-xmlrpc
-Filename: ./php7.4-xmlrpc_1%253a7.4.33-8+0~20230904.88+debian11~1.gbp87c414_amd64.deb
+Filename: ./php7.4-xmlrpc_1%253a7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef_amd64.deb
 Size: 13096
-MD5sum: ec78f706594a2fade4f092f01eec85f6
-SHA1: 2fd29e2aa326bd9dc047f408370eefccaf407f36
-SHA256: 6556459baf8753faeb96227da932d71e4b118cbdcb00071536d97cd99efad080
+MD5sum: c7e13c904f8ea6256daef85b0df6ce6b
+SHA1: 1a151f02765999408c4efeb4381bbbffa16921d5
+SHA256: 857aebf559ea7b406e7f14395b3c815bb37426d57e6f9d0733ff0a326fe90f5b
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -10514,16 +10495,16 @@ Description: XMLRPC-EPI module for PHP
 
 Package: php7.4-xsl
 Source: php7.4
-Version: 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414
+Version: 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef
 Architecture: all
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 83
 Depends: php7.4-common, php7.4-xml
-Filename: ./php7.4-xsl_1%253a7.4.33-8+0~20230904.88+debian11~1.gbp87c414_all.deb
-Size: 51408
-MD5sum: 791d80d561a6a2ac0abe0ccd50f9b7bd
-SHA1: 404f3f45f467126ec2c685416865e867e1e19e3c
-SHA256: 35f7f0c6d4408d9b7e5a62164e419641f9d0538ce9af45a03f4f3968ebc4ce42
+Filename: ./php7.4-xsl_1%253a7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef_all.deb
+Size: 51828
+MD5sum: b9e8cb0bd4d170d0d2a8742a0ea6e00a
+SHA1: 404c9c743fdc84e660f30ba36924c1a7af895514
+SHA256: d3a9283fdb305144655f8c26dff5b130d3e90fd489a7430f7b86bfde3152b47a
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -10581,17 +10562,17 @@ Description: YAML-1.1 parser and emitter for PHP
 
 Package: php7.4-zip
 Source: php7.4
-Version: 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414
+Version: 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 96
-Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-8+0~20230904.88+debian11~1.gbp87c414), libc6 (>= 2.27), libzip4 (>= 1.3.2)
+Depends: php-common (>= 1:81~), ucf, php7.4-common (= 1:7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef), libc6 (>= 2.27), libzip4 (>= 1.3.2)
 Provides: php-zip
-Filename: ./php7.4-zip_1%253a7.4.33-8+0~20230904.88+debian11~1.gbp87c414_amd64.deb
-Size: 21408
-MD5sum: 0efbb18f4400d534283e99d855755eb5
-SHA1: 9347c4dc0e919f731b208f21c37996372773ee48
-SHA256: a92123cd53a57c7ac6e954896de1decbad0e29b7d5eb7ef57a6da01cba85d1aa
+Filename: ./php7.4-zip_1%253a7.4.33-10+0~20240411.90+debian11~1.gbp6bc7ef_amd64.deb
+Size: 21508
+MD5sum: d26af21c44a5b72ec3e7af8dff54100b
+SHA1: ef8301183eea564297a3531843a582218f9f0152
+SHA256: 19f9eb5018368e0bb0f1ac6b100c72c505807fc1a229adaee5ffe72059570d09
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -10726,17 +10707,17 @@ Description: AST extension for PHP 7
 
 Package: php8.3-bcmath
 Source: php8.3
-Version: 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b
+Version: 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 68
-Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b), libc6 (>= 2.14)
+Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5), libc6 (>= 2.14)
 Provides: php-bcmath
-Filename: ./php8.3-bcmath_8.3.4-1+0~20240329.26+debian11~1.gbpa5171b_amd64.deb
+Filename: ./php8.3-bcmath_8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5_amd64.deb
 Size: 15744
-MD5sum: 4bd7b7f171055cc0bef87923c5f6b1d6
-SHA1: 818ade2b7c36d032726c8c513197f3d85269369f
-SHA256: 20c6e112f43625013df8dce0b22687e6a1cbfb14f0747edf15c4c7aed9ab7650
+MD5sum: 2175e6e47f80f55cc476daa718366ccc
+SHA1: 88b8ea39c0f156cd9d150f4fa6bb5fc586c90215
+SHA256: 2de509d6e070abca45c3e98cd0cbc641c546ef1eb9d66c466e905164088048ac
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -10749,17 +10730,17 @@ Description: Bcmath module for PHP
 
 Package: php8.3-bz2
 Source: php8.3
-Version: 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b
+Version: 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 56
-Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b), libbz2-1.0, libc6 (>= 2.14)
+Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5), libbz2-1.0, libc6 (>= 2.14)
 Provides: php-bz2
-Filename: ./php8.3-bz2_8.3.4-1+0~20240329.26+debian11~1.gbpa5171b_amd64.deb
-Size: 10564
-MD5sum: 8aac610d0ac4215cfe273ec3ddd76bf4
-SHA1: 98718a49a91cd3cac6ddece209c4dfe60eab2987
-SHA256: ea27d8be44fed901f1f4ceb43341e68fc06beb71de151a981b3daa6821e84767
+Filename: ./php8.3-bz2_8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5_amd64.deb
+Size: 10572
+MD5sum: 7a79fb11d78ad5a4b624b1ae11eb73b4
+SHA1: 0982508d72a92431ee5039cffea185154992e5a4
+SHA256: eb05b935f958c1379f7d1bf962d34882b317df401f13277044ac874ea9ea0874
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -10772,18 +10753,18 @@ Description: bzip2 module for PHP
 
 Package: php8.3-cgi
 Source: php8.3
-Version: 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b
+Version: 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
-Installed-Size: 10999
-Depends: media-types | mime-support, php8.3-cli, php8.3-common (= 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b), php8.3-opcache, tzdata, ucf, libargon2-1 (>= 0~20171227), libc6 (>= 2.30), libpcre2-8-0 (>= 10.38), libsodium23 (>= 1.0.18), libssl1.1 (>= 1.1.1), libxml2 (>= 2.8.0), zlib1g (>= 1:1.1.4)
+Installed-Size: 11007
+Depends: media-types | mime-support, php8.3-cli, php8.3-common (= 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5), php8.3-opcache, tzdata, ucf, libargon2-1 (>= 0~20171227), libc6 (>= 2.30), libpcre2-8-0 (>= 10.38), libsodium23 (>= 1.0.18), libssl1.1 (>= 1.1.1), libxml2 (>= 2.8.0), zlib1g (>= 1:1.1.4)
 Suggests: php-pear
 Provides: php-cgi, php-json, php8.3-json, phpapi-20230831
-Filename: ./php8.3-cgi_8.3.4-1+0~20240329.26+debian11~1.gbpa5171b_amd64.deb
-Size: 1702060
-MD5sum: 4958bac65d110ec3e37474b105aca5a4
-SHA1: e0b4c15e288cf0f2c364c4a0476da62660f2d5fe
-SHA256: f93c467129cbd4ebf06535404b28e5a42317ef34791bff6ef7bee5c795548f74
+Filename: ./php8.3-cgi_8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5_amd64.deb
+Size: 1699024
+MD5sum: dec1f1cc68d79c8f45e80844e8baab81
+SHA1: 03d0e9673a0b3b453305698779fc81b78393ac22
+SHA256: 56705f4d7048df61e4aa9277417229e24355d36f7dff8d340b809bca17c9795b
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -10802,18 +10783,18 @@ Description: server-side, HTML-embedded scripting language (CGI binary)
 
 Package: php8.3-cli
 Source: php8.3
-Version: 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b
+Version: 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 5660
-Depends: libedit2 (>= 2.11-20080614-4), media-types | mime-support, php8.3-common (= 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b), php8.3-opcache, php8.3-readline, tzdata, ucf, libargon2-1 (>= 0~20171227), libc6 (>= 2.30), libpcre2-8-0 (>= 10.38), libsodium23 (>= 1.0.18), libssl1.1 (>= 1.1.1), libxml2 (>= 2.8.0), zlib1g (>= 1:1.1.4)
+Depends: libedit2 (>= 2.11-20080614-4), media-types | mime-support, php8.3-common (= 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5), php8.3-opcache, php8.3-readline, tzdata, ucf, libargon2-1 (>= 0~20171227), libc6 (>= 2.30), libpcre2-8-0 (>= 10.38), libsodium23 (>= 1.0.18), libssl1.1 (>= 1.1.1), libxml2 (>= 2.8.0), zlib1g (>= 1:1.1.4)
 Suggests: php-pear
 Provides: php-cli, php-json, php8.3-json, phpapi-20230831
-Filename: ./php8.3-cli_8.3.4-1+0~20240329.26+debian11~1.gbpa5171b_amd64.deb
-Size: 1744004
-MD5sum: d87c97646a239bbe8a2e0d1360fccf13
-SHA1: 543e553de4bcce632507077e689d2eaceac6c29c
-SHA256: fb6b42a4b63012e969de0e8e6b57cb064ee45aef842a45403b0cb2979ab7937a
+Filename: ./php8.3-cli_8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5_amd64.deb
+Size: 1744316
+MD5sum: 617c7f0f6cad162b8bdbb01ef163e680
+SHA1: fc3f609cfe5dae65dc0cb51a436662a6ea01a427
+SHA256: d8fb0f3bf36fce0e71f4f10fea4efac53d6a50a63a28245839445fcff6c5d872
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -10830,18 +10811,18 @@ Description: command-line interpreter for the PHP scripting language
 
 Package: php8.3-common
 Source: php8.3
-Version: 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b
+Version: 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
-Installed-Size: 9362
+Installed-Size: 9363
 Depends: php-common (>= 1:81~), ucf, libc6 (>= 2.27), libffi7 (>= 3.3~20180313), libssl1.1 (>= 1.1.0)
 Breaks: gforge-common (<< 6), php7.0-curl (<< 7.0.33-1~), php7.2-sodium (<< 7.2.12~)
 Provides: php-calendar, php-ctype, php-exif, php-ffi, php-fileinfo, php-ftp, php-iconv, php-pdo, php-phar, php-posix, php-shmop, php-sockets, php-sysvmsg, php-sysvsem, php-sysvshm, php-tokenizer, php8.3-calendar, php8.3-ctype, php8.3-exif, php8.3-ffi, php8.3-fileinfo, php8.3-ftp, php8.3-gettext, php8.3-iconv, php8.3-pdo, php8.3-phar, php8.3-posix, php8.3-shmop, php8.3-sockets, php8.3-sysvmsg, php8.3-sysvsem, php8.3-sysvshm, php8.3-tokenizer
-Filename: ./php8.3-common_8.3.4-1+0~20240329.26+debian11~1.gbpa5171b_amd64.deb
-Size: 705768
-MD5sum: 86c59cc28f29be1e1546c74ca7958b3d
-SHA1: e92b92cfde27fe8b71ab283533ce59523da035ed
-SHA256: 4c2c7514114788c0f938bb2289399355027e4ca5ff79e8fa48d433ea06b91d8f
+Filename: ./php8.3-common_8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5_amd64.deb
+Size: 706984
+MD5sum: b980ef62f72b0aff079474a61977034a
+SHA1: 1f0915a6bc49ccf01d711a6b4a6664e52921dc58
+SHA256: 8865e3b5b03892f74fa5fa21d3add988107a8a9bb73108f52409aff5d98718f2
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -10854,18 +10835,18 @@ Description: documentation, examples and common module for PHP
 
 Package: php8.3-curl
 Source: php8.3
-Version: 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b
+Version: 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 148
-Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b), libc6 (>= 2.14), libcurl4 (>= 7.63.0)
+Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5), libc6 (>= 2.14), libcurl4 (>= 7.63.0)
 Breaks: php7.0-curl (<< 7.0.33-1~)
 Provides: php-curl
-Filename: ./php8.3-curl_8.3.4-1+0~20240329.26+debian11~1.gbpa5171b_amd64.deb
-Size: 35292
-MD5sum: cfaaad897c6425b9d19041a056b3ed24
-SHA1: 24776271debe2b60b208d2ed90b8275b0afbf113
-SHA256: bd0bd664ce8fc65abc3e1a14c69749d41fe576084b458b4515118bb54c9bf7a6
+Filename: ./php8.3-curl_8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5_amd64.deb
+Size: 35308
+MD5sum: 20e52332f3a19b2fc883d89ee2b609be
+SHA1: 94d3c9c00240c58bfb865da6de9f046ea17ef122
+SHA256: fdf8729b74f04be93ce325897a94ba6486399a398dcb22f4b2d390813a173350
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -10878,17 +10859,17 @@ Description: CURL module for PHP
 
 Package: php8.3-dba
 Source: php8.3
-Version: 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b
+Version: 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 96
-Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b), libc6 (>= 2.14), libdb5.3, liblmdb0 (>= 0.9.7), libqdbm14 (>= 1.8.74)
+Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5), libc6 (>= 2.14), libdb5.3, liblmdb0 (>= 0.9.7), libqdbm14 (>= 1.8.74)
 Provides: php-dba
-Filename: ./php8.3-dba_8.3.4-1+0~20240329.26+debian11~1.gbpa5171b_amd64.deb
-Size: 24244
-MD5sum: 5ac4f9538d931314dbe4e81f8abb81cd
-SHA1: 21b4364b661f06918247a57fec10b05da54139ef
-SHA256: b9f403bf5affde5673e5d7805d186b7b01629b521a0dfd92945712c0d11faeed
+Filename: ./php8.3-dba_8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5_amd64.deb
+Size: 24284
+MD5sum: 5da55b815fbf9ddcafb9b886b319ef86
+SHA1: 6a6b1d481081460289b88ae614c525b619a6d9fb
+SHA256: d006303b4d82913aaf30e9ba2c6b1969662c5e503acf7de294b9a792617564e9
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -10924,18 +10905,18 @@ Description: Arbitrary precision floating-point decimal for PHP
 
 Package: php8.3-dev
 Source: php8.3
-Version: 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b
+Version: 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
-Installed-Size: 5508
-Depends: autoconf (>= 2.63), automake (>= 1.11), libpcre2-dev (>= 10.30), libssl-dev, php8.3-cli (>= 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b), php8.3-common (= 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b), pkg-config, shtool, libtool (>= 2.4.6-0.1~)
+Installed-Size: 5514
+Depends: autoconf (>= 2.63), automake (>= 1.11), libpcre2-dev (>= 10.30), libssl-dev, php8.3-cli (>= 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5), php8.3-common (= 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5), pkg-config, shtool, libtool (>= 2.4.6-0.1~)
 Recommends: pkg-php-tools
 Suggests: dh-php
-Filename: ./php8.3-dev_8.3.4-1+0~20240329.26+debian11~1.gbpa5171b_amd64.deb
-Size: 519488
-MD5sum: fedfec1cfa889e1800a70bf75ca79b4a
-SHA1: fce299b6e6659aafe444d76b4f81137af35c9981
-SHA256: 7927cdc77eb236257b9bce16f554698a40c453cf3dc27f4530147b9e51c12599
+Filename: ./php8.3-dev_8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5_amd64.deb
+Size: 520452
+MD5sum: 77bb3db5d7e51dbe255e64e08015b6fa
+SHA1: bfd914dabe7d95abc89ba3a0a75b8c72cbc978a4
+SHA256: 5b0c9f90f7e360888a03468e6316f8c729d87d7da1870a7b00161b4284eb3d3c
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -10972,17 +10953,17 @@ Description: PHP extension providing efficient data structures for PHP 7
 
 Package: php8.3-enchant
 Source: php8.3
-Version: 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b
+Version: 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 56
-Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b), libc6 (>= 2.14), libenchant-2-2 (>= 2.2.3)
+Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5), libc6 (>= 2.14), libenchant-2-2 (>= 2.2.3)
 Provides: php-enchant
-Filename: ./php8.3-enchant_8.3.4-1+0~20240329.26+debian11~1.gbpa5171b_amd64.deb
-Size: 9392
-MD5sum: 9759f212637687dd1027db2e383f97e0
-SHA1: 1d6fab2628f632cce9801ed07352a1c51b066498
-SHA256: 74080a7d4a18b92743ade1e33b19e0647105845a59395fd1317501b3a073a3ff
+Filename: ./php8.3-enchant_8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5_amd64.deb
+Size: 9400
+MD5sum: 16ef0ecb0fda9b00e5c44ea4ac90900d
+SHA1: e96ae300a99fb63f815bcaaf679f7d95e3d68022
+SHA256: 1d7f9d92cf820bf5ee73df35a5d28d99da6abee80b51c2daf752331d2c6e76f6
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -11019,18 +11000,18 @@ Description: Interrupting timer and low-overhead sampling profiler for PHP
 
 Package: php8.3-fpm
 Source: php8.3
-Version: 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b
+Version: 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
-Installed-Size: 5686
-Depends: media-types | mime-support, php8.3-cli, php8.3-common (= 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b), php8.3-opcache, procps, systemd | systemd-tmpfiles, tzdata, ucf, libacl1 (>= 2.2.23), libapparmor1 (>= 2.7.0~beta1+bzr1772), libargon2-1 (>= 0~20171227), libc6 (>= 2.30), libpcre2-8-0 (>= 10.38), libsodium23 (>= 1.0.18), libssl1.1 (>= 1.1.1), libsystemd0, libxml2 (>= 2.8.0), zlib1g (>= 1:1.1.4)
+Installed-Size: 5690
+Depends: media-types | mime-support, php8.3-cli, php8.3-common (= 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5), php8.3-opcache, procps, systemd | systemd-tmpfiles, tzdata, ucf, libacl1 (>= 2.2.23), libapparmor1 (>= 2.7.0~beta1+bzr1772), libargon2-1 (>= 0~20171227), libc6 (>= 2.30), libpcre2-8-0 (>= 10.38), libsodium23 (>= 1.0.18), libssl1.1 (>= 1.1.1), libsystemd0, libxml2 (>= 2.8.0), zlib1g (>= 1:1.1.4)
 Suggests: php-pear
 Provides: php-fpm, php-json, php8.3-json, phpapi-20230831
-Filename: ./php8.3-fpm_8.3.4-1+0~20240329.26+debian11~1.gbpa5171b_amd64.deb
-Size: 1754276
-MD5sum: 4079a898f1217bc43425665b67a6d7b3
-SHA1: 3a1a5ea17ea4b7d52ddc83602caa626de06036c4
-SHA256: 5559d13c8b0b7d2ac3533cfad67430af04da9ed8f24a26c3890e110da77a419f
+Filename: ./php8.3-fpm_8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5_amd64.deb
+Size: 1754684
+MD5sum: 63c615beda9e479c49015fb32d9d10f6
+SHA1: c3a04a1e6e82b6af6dac2533b52e0ebfa9b1d6eb
+SHA256: 770c8349d9d7a3b696423993bcecfc73c1127860180a756131b59fde52939598
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -11048,17 +11029,17 @@ Description: server-side, HTML-embedded scripting language (FPM-CGI binary)
 
 Package: php8.3-gd
 Source: php8.3
-Version: 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b
+Version: 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 136
-Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b), libc6 (>= 2.4), libgd3 (>= 2.3.3)
+Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5), libc6 (>= 2.4), libgd3 (>= 2.3.3)
 Provides: php-gd
-Filename: ./php8.3-gd_8.3.4-1+0~20240329.26+debian11~1.gbpa5171b_amd64.deb
-Size: 28768
-MD5sum: 54e24d6ae63be01800e3323088a78613
-SHA1: d70e1e3d4774fa5d5d9df497ca6d52fdb85b0475
-SHA256: bc4e84caa16062d96a9f66c0602583b15b80e004326287121782925e7558721e
+Filename: ./php8.3-gd_8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5_amd64.deb
+Size: 28704
+MD5sum: 6877ae3043a127aa6bafb7979fb91e78
+SHA1: 41720334422c290189d5568043148959433eb714
+SHA256: 2cc4c92272fa68df789c99f34d15de9c5dafd1e8b4cc24504ec01cce43bbcf09
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -11120,17 +11101,17 @@ Description: Provides a wrapper to the GraphicsMagick library
 
 Package: php8.3-gmp
 Source: php8.3
-Version: 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b
+Version: 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 100
-Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b), libc6 (>= 2.4), libgmp10
+Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5), libc6 (>= 2.4), libgmp10
 Provides: php-gmp
-Filename: ./php8.3-gmp_8.3.4-1+0~20240329.26+debian11~1.gbpa5171b_amd64.deb
-Size: 20704
-MD5sum: 93c2989d5aac7688f714531bd36cc32a
-SHA1: 79013d868f58590ee0af768e6442c77b97b8c5e3
-SHA256: 34b6ccb87200465f0c459d662adb53e90e1c99f9ea22f7b57efadab680dcd00d
+Filename: ./php8.3-gmp_8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5_amd64.deb
+Size: 20684
+MD5sum: 3003352f679a22d68c8f30975ff0c38d
+SHA1: d3b7788bb6147c9f4a39846bed9a3d47811fc860
+SHA256: ab156db56e9e972153ccfa5d8bcce6151ece17698784e02b24bbe40bf00c2cba
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -11272,17 +11253,17 @@ Description: Provides a wrapper to the ImageMagick library
 
 Package: php8.3-imap
 Source: php8.3
-Version: 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b
+Version: 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 136
-Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b), libc-client2007e, libc6 (>= 2.14)
+Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5), libc-client2007e, libc6 (>= 2.14)
 Provides: php-imap
-Filename: ./php8.3-imap_8.3.4-1+0~20240329.26+debian11~1.gbpa5171b_amd64.deb
-Size: 32720
-MD5sum: 97e3a2edf8b82f1560a306f6a373b1d1
-SHA1: 9ea10a2bedc298cfa809d3634631d06a63818583
-SHA256: decb5f229fde6319df5984bb5fa557ecdb6a82a6fba1dc79365c2d87375f4de8
+Filename: ./php8.3-imap_8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5_amd64.deb
+Size: 32700
+MD5sum: a5bb9e0b4c8bd76795bf08883f1610a2
+SHA1: 3f9da7de322bafc7c923fd68c438f9ec170fabde
+SHA256: 439d48d2daa5e203c21b9060c301a51369341ee0e15d3af71dc3c12fcac35f4b
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -11317,17 +11298,17 @@ Description: Inotify bindings for PHP
 
 Package: php8.3-interbase
 Source: php8.3
-Version: 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b
+Version: 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 68
-Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b), libc6 (>= 2.14), libfbclient2 (>= 2.5.0.25784~ReleaseCandidate1.ds2)
+Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5), libc6 (>= 2.14), libfbclient2 (>= 2.5.0.25784~ReleaseCandidate1.ds2)
 Provides: php-pdo-firebird, php8.3-pdo-firebird
-Filename: ./php8.3-interbase_8.3.4-1+0~20240329.26+debian11~1.gbpa5171b_amd64.deb
-Size: 15332
-MD5sum: a9e16887f3d1717ff035e72742941102
-SHA1: dff95e43f084d51ca76762b4793019a278194e0d
-SHA256: 9d5861ff4a4a186ffb237914b9e3aac4baf9d6a57653713ea29923e3ab1efa2e
+Filename: ./php8.3-interbase_8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5_amd64.deb
+Size: 15272
+MD5sum: c91c0500829c47699e53844bfedd0417
+SHA1: 39bd0b5fe186f20b1ffa98739a0f2961e96c5358
+SHA256: 37006c2725e5ab69832db1c4efb8a39824dd88cf4512b8f253ec2e6903796cbb
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -11340,17 +11321,17 @@ Description: Interbase module for PHP
 
 Package: php8.3-intl
 Source: php8.3
-Version: 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b
+Version: 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 600
-Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b), libc6 (>= 2.14), libgcc-s1 (>= 3.0), libicu67 (>= 67.1-1~), libstdc++6 (>= 4.9)
+Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5), libc6 (>= 2.14), libgcc-s1 (>= 3.0), libicu67 (>= 67.1-1~), libstdc++6 (>= 4.9)
 Provides: php-intl
-Filename: ./php8.3-intl_8.3.4-1+0~20240329.26+debian11~1.gbpa5171b_amd64.deb
-Size: 140952
-MD5sum: 6b731930f51ac6eba01c2d633f16c5e6
-SHA1: 1e7add33afb256aadc87adb577af168a4001f7ff
-SHA256: 6b3b18f4652cb8a0e9b8c0da23ef3a64d0fbc818f0f4f91fca52669305a4e5a6
+Filename: ./php8.3-intl_8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5_amd64.deb
+Size: 141524
+MD5sum: b7d4f78d8fff3de9d37d5a19158bef6a
+SHA1: 61bd7c4463b09d7a13386ad47cb4dbc1b7c3a654
+SHA256: b193c61f26c4597b302c101b6355c8d99108e834927ee57e7020337f005dd92e
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -11363,17 +11344,17 @@ Description: Internationalisation module for PHP
 
 Package: php8.3-ldap
 Source: php8.3
-Version: 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b
+Version: 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 128
-Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b), libc6 (>= 2.14), libldap-2.4-2 (>= 2.4.25)
+Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5), libc6 (>= 2.14), libldap-2.4-2 (>= 2.4.25)
 Provides: php-ldap
-Filename: ./php8.3-ldap_8.3.4-1+0~20240329.26+debian11~1.gbpa5171b_amd64.deb
-Size: 31236
-MD5sum: f0a8441b2e713e2fbd408101ed46afdc
-SHA1: 5840586cefa4b0b7265a76415e35f5970a63f9ad
-SHA256: 7a9a2e0ce438da96d2ddae4c8ddd14a830413175c92f7e7c40797f0717c62f93
+Filename: ./php8.3-ldap_8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5_amd64.deb
+Size: 31068
+MD5sum: 40184966537c5e04b9dda07b36e5af97
+SHA1: 0059f4dfbdd4b492a7dbd1eed270a4a2f840640d
+SHA256: 3910bbb27e28f27f458052675419dbdab920a5a4f139ee39642b2b3a4b9a688a
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -11456,17 +11437,17 @@ Description: Reader for the MaxMind DB file format for PHP
 
 Package: php8.3-mbstring
 Source: php8.3
-Version: 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b
+Version: 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 1202
-Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b), libc6 (>= 2.14), libonig5 (>= 6.8.1)
+Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5), libc6 (>= 2.14), libonig5 (>= 6.8.1)
 Provides: php-mbstring
-Filename: ./php8.3-mbstring_8.3.4-1+0~20240329.26+debian11~1.gbpa5171b_amd64.deb
-Size: 443400
-MD5sum: 559ecee96bfebf62b9d8bd1107856c7c
-SHA1: 3f53d5f699fd7027b08968ae3dfc35d9e00bdeb2
-SHA256: 5a55e8eff96f85cf1b4f34a5fc298a3669d6ae80dd52d079a10445587092ede0
+Filename: ./php8.3-mbstring_8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5_amd64.deb
+Size: 443352
+MD5sum: 102fa04dcd3bf75646da4a1dbcb92b5e
+SHA1: 6a791569ce1771a8b30c34cad68eddeccdd91583
+SHA256: 9231ece44bbcf4e7f4c1bad7eb0dd3dc56c54f4e31065369fc99842cde4162cb
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -11608,17 +11589,17 @@ Description: PHP extension for interfacing with MessagePack
 
 Package: php8.3-mysql
 Source: php8.3
-Version: 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b
+Version: 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 447
-Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b), libc6 (>= 2.15)
+Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5), libc6 (>= 2.15)
 Provides: php-mysqli, php-mysqlnd, php-pdo-mysql, php8.3-mysqli, php8.3-mysqlnd, php8.3-pdo-mysql
-Filename: ./php8.3-mysql_8.3.4-1+0~20240329.26+debian11~1.gbpa5171b_amd64.deb
-Size: 116596
-MD5sum: ab50530b40d85585a8cc393f63113c89
-SHA1: d10dfbf0a8ec71b44e872aa5292c5b073e3ce9fe
-SHA256: 6e8ecb73bd8fff3b97bd23c76a392e04c303bb3d7eecc73e9bf46e97c381716c
+Filename: ./php8.3-mysql_8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5_amd64.deb
+Size: 116564
+MD5sum: 18b77ee2dc0324a15e0dc1eb451221ed
+SHA1: 76971bee75db5a0e15b1bd53e307060f0a848bb9
+SHA256: 67329da5f625321a8a17c01cb6afcbcbe980f1dd9a120fdf2f321d8199938705
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -11658,17 +11639,17 @@ Description: OAuth 1.0 consumer and provider extension
 
 Package: php8.3-odbc
 Source: php8.3
-Version: 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b
+Version: 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 140
-Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b), libc6 (>= 2.14), libodbc1 (>= 2.3.1)
+Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5), libc6 (>= 2.14), libodbc1 (>= 2.3.1)
 Provides: php-odbc, php-pdo-odbc, php8.3-pdo-odbc
-Filename: ./php8.3-odbc_8.3.4-1+0~20240329.26+debian11~1.gbpa5171b_amd64.deb
-Size: 33316
-MD5sum: b82945b905052afa796aed2eaeade945
-SHA1: 99022b14f6bfcd44486b44f000678462f130fc93
-SHA256: 423041bc274f2cebc6d17e5b0877350716c3da189d0cca136da023972e71cd6c
+Filename: ./php8.3-odbc_8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5_amd64.deb
+Size: 33164
+MD5sum: 6922dc4ad9feca93d8a8671fc5208657
+SHA1: 0c988d5e28989d621c4caa9ee15698cf5a68fd23
+SHA256: c1b990660a38b14c9d8f4fe4002f0a038792a8c6bfcb7c0c8c567a3f610475c9
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -11681,17 +11662,17 @@ Description: ODBC module for PHP
 
 Package: php8.3-opcache
 Source: php8.3
-Version: 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b
+Version: 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 1024
-Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b), libc6 (>= 2.27), libgcc-s1 (>= 3.3)
+Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5), libc6 (>= 2.27), libgcc-s1 (>= 3.3)
 Provides: php-opcache
-Filename: ./php8.3-opcache_8.3.4-1+0~20240329.26+debian11~1.gbpa5171b_amd64.deb
-Size: 341348
-MD5sum: 89b1529f3fa16f26567402885cac1929
-SHA1: 26d9a1f5ea218a82b92f862c146385f29aa250d6
-SHA256: 08aa5a26fb416604920178e3e5be1118a8c497d8c798b3d734a09d29dcfb459e
+Filename: ./php8.3-opcache_8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5_amd64.deb
+Size: 341336
+MD5sum: e28dfe23e20f03a21a812990256fb16c
+SHA1: 640caaaf5bcfb8dcba355ed067b2c59711c96c8e
+SHA256: ecacacb113328fa231047a946f2d815e0ba0322752d728e878ad4a50dfed3437
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -11726,17 +11707,17 @@ Description: Code coverage driver
 
 Package: php8.3-pgsql
 Source: php8.3
-Version: 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b
+Version: 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 224
-Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b), libc6 (>= 2.14), libpq5 (>= 9.6~~)
+Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5), libc6 (>= 2.14), libpq5 (>= 9.6~~)
 Provides: php-pdo-pgsql, php-pgsql, php8.3-pdo-pgsql
-Filename: ./php8.3-pgsql_8.3.4-1+0~20240329.26+debian11~1.gbpa5171b_amd64.deb
-Size: 58604
-MD5sum: c04336e8676858a37c5d23e99dd5a8b2
-SHA1: 2aeeeeae3703948006355fcd81d10c775ec741b1
-SHA256: 34151de24b7ebe7d6b774543d409b31d3a24f0852642c5d05e6657b4dd30ae6c
+Filename: ./php8.3-pgsql_8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5_amd64.deb
+Size: 58648
+MD5sum: e2926bd403cc1cc0829830f395f6f307
+SHA1: 8be4dd1c7be1c427c950dff40f55299311e184e9
+SHA256: 7cb5f6e66b9415968c812ef37e1dd71dc5708c6e89e7c2d8faeef38abd4d39be
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -11775,18 +11756,18 @@ Description: full-stack PHP framework delivered as a C-extension
 
 Package: php8.3-phpdbg
 Source: php8.3
-Version: 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b
+Version: 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
-Installed-Size: 5691
-Depends: media-types | mime-support, php8.3-cli, php8.3-common (= 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b), php8.3-opcache, tzdata, ucf, libargon2-1 (>= 0~20171227), libc6 (>= 2.30), libpcre2-8-0 (>= 10.38), libsodium23 (>= 1.0.18), libssl1.1 (>= 1.1.1), libxml2 (>= 2.8.0), zlib1g (>= 1:1.1.4)
+Installed-Size: 5695
+Depends: media-types | mime-support, php8.3-cli, php8.3-common (= 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5), php8.3-opcache, tzdata, ucf, libargon2-1 (>= 0~20171227), libc6 (>= 2.30), libpcre2-8-0 (>= 10.38), libsodium23 (>= 1.0.18), libssl1.1 (>= 1.1.1), libxml2 (>= 2.8.0), zlib1g (>= 1:1.1.4)
 Recommends: php-readline
 Provides: php-json, php-phpdbg, php8.3-json, phpapi-20230831
-Filename: ./php8.3-phpdbg_8.3.4-1+0~20240329.26+debian11~1.gbpa5171b_amd64.deb
-Size: 1760480
-MD5sum: 59a2eac973c7c957daa8b257d64400d1
-SHA1: f9a3fe47ebe3ed4f714e5324b3043542ab7fe322
-SHA256: 9fde3a62175e4d2a725beba654fb19954b38f71456b918557ebe53b9b1aabc5a
+Filename: ./php8.3-phpdbg_8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5_amd64.deb
+Size: 1762400
+MD5sum: 44ce8f10a0ca56059c83cc3cbc1f61ad
+SHA1: a814b3eacf121b7148cf9f35e3f9dd4d156fe109
+SHA256: 4dcdfb28815ee3ce470b8224da084b27404b0769ac52051fd2adceff1c2b00ac
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -11872,17 +11853,17 @@ Description: ps module for PHP
 
 Package: php8.3-pspell
 Source: php8.3
-Version: 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b
+Version: 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 56
-Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b), libaspell15 (>= 0.60.8), libc6 (>= 2.4)
+Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5), libaspell15 (>= 0.60.8), libc6 (>= 2.4)
 Provides: php-pspell
-Filename: ./php8.3-pspell_8.3.4-1+0~20240329.26+debian11~1.gbpa5171b_amd64.deb
-Size: 8828
-MD5sum: 0e243bb116b0b8f9c0ecc73fec3fd243
-SHA1: e0f3606851d1c5a79518dbe51057aeabca0281fd
-SHA256: eda3a724b813e7a6d7ecdba37b36957473591e31117ebc5686ad6812f5488f39
+Filename: ./php8.3-pspell_8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5_amd64.deb
+Size: 8836
+MD5sum: d11f7695f9e393869b2a11bee7fbddf0
+SHA1: a68261cb3f4b1ed8339ef65b3b0ef8137aeee5c5
+SHA256: 2601801dbe8575aa83576979babc70ad7e9b54a2847cf465f55e109c6a12eea1
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -11972,17 +11953,17 @@ Description: Kafka client for PHP based on librdkafka
 
 Package: php8.3-readline
 Source: php8.3
-Version: 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b
+Version: 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 64
-Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b), libc6 (>= 2.14), libedit2 (>= 3.1-20160903-0)
+Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5), libc6 (>= 2.14), libedit2 (>= 3.1-20160903-0)
 Provides: php-readline
-Filename: ./php8.3-readline_8.3.4-1+0~20240329.26+debian11~1.gbpa5171b_amd64.deb
-Size: 12556
-MD5sum: 8194eac8cf9866d1cf6f292f5eee273b
-SHA1: 998c9b2e020601a5761bef86d8d827b3c6f34712
-SHA256: a7a9cb525df0bcf71535186e9690a0d6d1069d47a94f895e76b56782ae586a19
+Filename: ./php8.3-readline_8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5_amd64.deb
+Size: 12520
+MD5sum: 77f1253fa1e3de0a3031153be5fae73a
+SHA1: ce3e5148ba31bbd4bfd80e3e2649bd1cc2ee8027
+SHA256: 329282f194d19ef3b32c186b0151c24980c596b230b3259c9d5393a76561a994
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -12066,18 +12047,18 @@ Description: PHP wrapper for libsmbclient
 
 Package: php8.3-snmp
 Source: php8.3
-Version: 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b
+Version: 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 92
-Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b), libc6 (>= 2.14), libsnmp40 (>= 5.9+dfsg)
+Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5), libc6 (>= 2.14), libsnmp40 (>= 5.9+dfsg)
 Recommends: snmp
 Provides: php-snmp
-Filename: ./php8.3-snmp_8.3.4-1+0~20240329.26+debian11~1.gbpa5171b_amd64.deb
-Size: 21680
-MD5sum: 2a2d11ed047e4f8093db6b14dff4e3a4
-SHA1: 35873e5610312b123872d644cfb30935319d007e
-SHA256: 0ac3666aa80129905cfeb4266224423ae264b6e66e841015ebb25c270f395b9e
+Filename: ./php8.3-snmp_8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5_amd64.deb
+Size: 21684
+MD5sum: 8ed85f50ae70325f2baef80c5fd8b38f
+SHA1: 9d93a98af6d8097a7eaa5df6d6d69293169a0526
+SHA256: 0761479e509e11f79d8422d2187202454d3e762d49d29c259e2e9806536a3554
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -12090,17 +12071,17 @@ Description: SNMP module for PHP
 
 Package: php8.3-soap
 Source: php8.3
-Version: 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b
+Version: 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 356
-Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b), libc6 (>= 2.14), libxml2 (>= 2.7.4)
+Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5), libc6 (>= 2.14), libxml2 (>= 2.7.4)
 Provides: php-soap
-Filename: ./php8.3-soap_8.3.4-1+0~20240329.26+debian11~1.gbpa5171b_amd64.deb
-Size: 123656
-MD5sum: ef3d7bbde0cbfb8b70ec32b9487498ef
-SHA1: 44c9867da30345ac0ba9769aa1ec710d9d02990d
-SHA256: 80d7d1960f66c590bcf53e6b72a62736ebe00d0ed74233731e0700082419ec97
+Filename: ./php8.3-soap_8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5_amd64.deb
+Size: 123736
+MD5sum: 9c2de03fe57e735833f91fc1aff42b9f
+SHA1: 5f60fe920c4b36a7fded39bb9847ef19f512b1b8
+SHA256: ccf6cbb2dd14f178bb2a6372d837c768e7013b880e7491032e987b724971c3a8
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -12157,17 +12138,17 @@ Description: PHP extension for communicating with Apache Solr server
 
 Package: php8.3-sqlite3
 Source: php8.3
-Version: 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b
+Version: 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 140
-Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b), libc6 (>= 2.14), libsqlite3-0 (>= 3.14.0)
+Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5), libc6 (>= 2.14), libsqlite3-0 (>= 3.14.0)
 Provides: php-pdo-sqlite, php-sqlite3, php8.3-pdo-sqlite
-Filename: ./php8.3-sqlite3_8.3.4-1+0~20240329.26+debian11~1.gbpa5171b_amd64.deb
-Size: 31660
-MD5sum: ed1320ed11d235445842e00f1093cd42
-SHA1: 2531c3387bcb7e3bf8121ce1b21da3f59a972961
-SHA256: bf01cda7de82367c74027d195907563a75883a36219cbc62e19406d97db0ed76
+Filename: ./php8.3-sqlite3_8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5_amd64.deb
+Size: 31572
+MD5sum: 10629e80a8005ef895591f9833e23162
+SHA1: 8ebc98e59bfd125683df89ab0d48ec9e07413e42
+SHA256: ab4656aec8fd31af1825e0572b82a5d36816f0a70f3edaad6cf72edee965204e
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -12270,17 +12251,17 @@ Description: Swoole Coroutine Fiber Async Programming Framework for PHP
 
 Package: php8.3-sybase
 Source: php8.3
-Version: 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b
+Version: 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 60
-Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b), libc6 (>= 2.14), libsybdb5 (>= 0.63)
+Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5), libc6 (>= 2.14), libsybdb5 (>= 0.63)
 Provides: php-pdo-dblib, php8.3-pdo-dblib
-Filename: ./php8.3-sybase_8.3.4-1+0~20240329.26+debian11~1.gbpa5171b_amd64.deb
-Size: 11984
-MD5sum: afa2036a52fa840a3cf96c1462781ad7
-SHA1: fdb4d4abf3d670344ad366d079c7f7186f62edf1
-SHA256: 4ac349319d6d1bc6178a0277578906d3cf343bea70b257cb82167ead517f93ca
+Filename: ./php8.3-sybase_8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5_amd64.deb
+Size: 11980
+MD5sum: 7c51b220ab44debb85a7f06e6613df85
+SHA1: 1e3b87898c2cc2b9683d91142c3048dbc3311ac3
+SHA256: 6d36c3c12df7ba54984472a1e8f95012b1c8d31e058a3a52058003916e2baa7a
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -12293,17 +12274,17 @@ Description: Sybase module for PHP
 
 Package: php8.3-tidy
 Source: php8.3
-Version: 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b
+Version: 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 92
-Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b), libc6 (>= 2.14), libtidy5deb1 (>= 1:5.2.0)
+Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5), libc6 (>= 2.14), libtidy5deb1 (>= 1:5.2.0)
 Provides: php-tidy
-Filename: ./php8.3-tidy_8.3.4-1+0~20240329.26+debian11~1.gbpa5171b_amd64.deb
-Size: 19024
-MD5sum: 2df7d8fdc8064901cbd8afb1df3aba4b
-SHA1: 30e60b3607b46ee33ebc1c22d68d3c468775d1da
-SHA256: 4f150d22951e29fd0f0ff6605a48baff6bfaabcc5ed73261d5797e9d555607bf
+Filename: ./php8.3-tidy_8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5_amd64.deb
+Size: 19012
+MD5sum: 91b39c1da3544f6ce6e228eadd3d212d
+SHA1: 70310cbf589795c01d981395299b0fe254dc8e1f
+SHA256: 87b280d96746eaa09aa4633321e443095dd4cde1b00d12861db717b9a0ea8f12
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -12482,19 +12463,19 @@ Description: Hierarchical Profiler for PHP 5.x
 
 Package: php8.3-xml
 Source: php8.3
-Version: 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b
+Version: 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 493
-Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b), libc6 (>= 2.14), libxml2 (>= 2.9.0), libxslt1.1 (>= 1.1.25)
+Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5), libc6 (>= 2.14), libxml2 (>= 2.9.0), libxslt1.1 (>= 1.1.25)
 Breaks: php8.3-xsl (<< 7.0.3-6~)
 Replaces: php8.3-xsl (<< 7.0.3-6~)
 Provides: php-dom, php-simplexml, php-xml, php-xmlreader, php-xmlwriter, php-xsl, php8.3-dom, php8.3-simplexml, php8.3-xmlreader, php8.3-xmlwriter, php8.3-xsl
-Filename: ./php8.3-xml_8.3.4-1+0~20240329.26+debian11~1.gbpa5171b_amd64.deb
-Size: 116160
-MD5sum: 05e253cba54776e9ab9add6943e5cdf4
-SHA1: 71153f113cede60d8cbe24efad417053ae7a5960
-SHA256: d7bfeee6cf82354bc6ebc594c5ad9f8b9dd9b078ef385018ff6933dd004f53e3
+Filename: ./php8.3-xml_8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5_amd64.deb
+Size: 115996
+MD5sum: 29b14b0c395eeb1a8a58c35fbad8faec
+SHA1: a9ed1d9d5df86d82f8da3e30c288722c31023a52
+SHA256: a18b9dae7531e663bc42bd7b6838d9c3edddbc48fafdf2126a0b8294ebbb38ac
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -12536,16 +12517,16 @@ Description: XML-RPC servers and clients functions for PHP
 
 Package: php8.3-xsl
 Source: php8.3
-Version: 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b
+Version: 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5
 Architecture: all
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
-Installed-Size: 59
+Installed-Size: 60
 Depends: php8.3-common, php8.3-xml
-Filename: ./php8.3-xsl_8.3.4-1+0~20240329.26+debian11~1.gbpa5171b_all.deb
-Size: 27920
-MD5sum: fa50c5b2a6cf2117aa2fec6eb16fe528
-SHA1: 3a21b2b11287df3af7539b355051ddb40b1a6a43
-SHA256: 216d7345154e3f1ef9f2e54cc72cff39ff8262c58edfef72c5f6068b22c4e48a
+Filename: ./php8.3-xsl_8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5_all.deb
+Size: 28920
+MD5sum: 7877506137e4e849126ad0ab57c23805
+SHA1: 6e7bf586d0b4845012c04de69cf988279f3ece4b
+SHA256: 224ede32a461f3c1766593353730c81060454985dabf8d6125ea7559fb70c1b6
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
@@ -12603,17 +12584,17 @@ Description: YAML-1.1 parser and emitter for PHP
 
 Package: php8.3-zip
 Source: php8.3
-Version: 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b
+Version: 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5
 Architecture: amd64
 Maintainer: Debian PHP Maintainers <team+pkg-php@tracker.debian.org>
 Installed-Size: 124
-Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.4-1+0~20240329.26+debian11~1.gbpa5171b), libc6 (>= 2.27), libzip4 (>= 1.7.0)
+Depends: php-common (>= 1:81~), ucf, php8.3-common (= 8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5), libc6 (>= 2.27), libzip4 (>= 1.7.0)
 Provides: php-zip
-Filename: ./php8.3-zip_8.3.4-1+0~20240329.26+debian11~1.gbpa5171b_amd64.deb
-Size: 27120
-MD5sum: b4631771701dcfd254fbb8289a3fba09
-SHA1: 2fb850928febbde498c487007c6bd19faf9d19a8
-SHA256: e57e41f8867e93d50e107380797c2d1fa39435fa609a1692d3331fbaa18da5c3
+Filename: ./php8.3-zip_8.3.6-1+0~20240416.29+debian11~1.gbp9a7ce5_amd64.deb
+Size: 27100
+MD5sum: d05cce9762c5af805ba24f2babdff6a4
+SHA1: f00a4bc14f4af35d7c8d0950e83ab393a2e97a4c
+SHA256: 26ab75d3ca20abec2c2c536047846bac5fb1b95f201b47f88d755d9144fe940b
 Section: php
 Priority: optional
 Homepage: http://www.php.net/
