@@ -403,6 +403,23 @@ Description: command line tool for transferring data with URL syntax
  NTLM, Negotiate, kerberos...), file transfer resume, proxy tunneling and a
  busload of other useful tricks.
 
+Package: debsuryorg-archive-keyring
+Version: 2024.02.05+0~20240205.1+debian12~1.gbp343037
+Architecture: all
+Maintainer: Ondřej Surý <ondrej@sury.org>
+Installed-Size: 30
+Filename: ./debsuryorg-archive-keyring.deb
+Size: 4416
+MD5sum: d0d54da731851dbddbbe1c8cb83b2959
+SHA1: 3e8330d9f05ff5e7b5fb5ce215e670f9fe0b417b
+SHA256: b99022a02f6894450367f21615ad627a92bb56177d49e33bc75540c2a6dfba9e
+Section: misc
+Priority: optional
+Description: GnuPG archive keys of the deb.sury.org archives
+ This keys digitally signs the Release files for its repositories hosted on
+ deb.sury.org. This package contains the archive keys required for APT to verify
+ the validity of the downloaded Release files.
+
 Package: dictionaries-common
 Version: 1.28.4
 Architecture: all
